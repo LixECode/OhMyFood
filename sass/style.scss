@@ -1,0 +1,12 @@
+@import "base/reset.scss";
+@import "base/variables.scss";
+@import "components/button.scss";
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 768px;
+    background: white;
+}

@@ -1,0 +1,17 @@
+button {
+    background-color: $purple;
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    padding: 20px 5px 20px 5px;
+    border-style: none;
+    background: linear-gradient(to top left, $purple, $pink);
+    color: white;
+    font-size: 15px;
+    box-shadow: 5px 5px 15px #c2c1c1;
+    cursor: pointer;
+}

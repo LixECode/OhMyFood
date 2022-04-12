@@ -43,53 +43,82 @@ td, th {
   padding: 0;
 }
 
-/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
+button {
+  background-color: #9356DC;
+  width: 200px;
+  margin-top: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  padding: 20px 5px 20px 5px;
+  border-style: none;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  color: white;
+  font-size: 15px;
+  box-shadow: 5px 5px 15px #c2c1c1;
+  cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
-  font-weight: normal;
+.homeCard {
+  background-color: #f2f2f2;
+  width: 450px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  padding: 30px 0 30px 0;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 5px 5px 15px #c2c1c1;
+  display: flex;
+  justify-content: flex-start;
+}
+.homeCard ul {
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+}
+.homeCard li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeCard li:nth-child(1) {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #9356DC;
+  color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-weight: 400;
+}
+.homeCard i {
+  color: grey;
+  font-size: 25px;
 }
 
-ul {
-  list-style: none;
+.homeCard:hover {
+  background-color: #f2eafb;
+}
+.homeCard:hover i {
+  color: #9356DC;
 }
 
-button, input, select {
-  margin: 0;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-img, video {
-  height: auto;
-  max-width: 100%;
-}
-
-iframe {
-  border: 0;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td, th {
-  padding: 0;
+* {
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-  background: black;
+  width: 768px;
+  background: white;
 }
 
 /*# sourceMappingURL=style.css.map */

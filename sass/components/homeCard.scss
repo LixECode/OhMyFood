@@ -1,0 +1,56 @@
+.homeCard {
+    background-color: #f2f2f2;
+    width: 450px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding: 30px 0 30px 0;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: 5px 5px 15px #c2c1c1;
+    display: flex;
+    justify-content: flex-start;
+    
+    ul{
+        display: flex;
+        align-items: center;
+        justify-items: space-between;
+    }
+
+    li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    li:nth-child(1) {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background: $purple;
+        color: white;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        font-weight: 400;
+    }
+
+    i {
+        color: grey;
+        font-size: 25px;
+    }
+}
+
+.homeCard:hover {
+    background-color: lighten($color: $purple, $amount: 35);
+
+    i {
+        color: $purple;
+    }
+}
+

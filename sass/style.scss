@@ -1,13 +1,13 @@
-@import "libs/reset.scss";
-@import "libs/reset.scss";
-@import "libs/functions.scss";
-@import "libs/responsive.scss";
+@import "base/reset.scss";
+@import "base/variables.scss";
+@import "components/button.scss";
+@import "components/homeCard.scss";
 
-$purple: #9356DC;
-$pink: #FF79DA;
-$green: #99E2D0;
-
-body {
-    background:  black;
+* {
+    font-family: 'Roboto', sans-serif;
 }
 
+body {
+    width: 768px;
+    background: white;
+}

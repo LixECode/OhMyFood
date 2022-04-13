@@ -2,6 +2,7 @@
 @import "utils/variables.scss";
 @import "components/button.scss";
 @import "components/homeCard.scss";
+@import "components/restaurantCard.scss";
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -12,3 +13,15 @@ body {
     background: white;
     margin: 0 auto;
 }
+
+h4 {
+    font-size: 18px;
+    font-weight: 800;
+    padding-top: 2px;
+  }
+  
+  h5 {
+    font-size: 17px;
+    font-weight: 400;
+  }
+  

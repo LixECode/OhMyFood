@@ -1,0 +1,58 @@
+.restaurantCard { 
+    margin-top: 20px; 
+    width: 320px; 
+    height: 250px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    box-shadow: 5px 5px 15px #c2c1c1; 
+    background-color: white;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+
+    img {
+        object-fit: cover;
+        height: 70%;
+        width: 100%;
+        border-top-right-radius: 18px;
+        border-top-left-radius: 18px;
+    }
+}
+
+.restaurantTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4%;
+    line-height: 25px;
+
+    i {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    }
+
+    .fa-solid {
+        background: linear-gradient(to bottom, $purple, $pink);
+	    -webkit-background-clip: text;
+	    -webkit-text-fill-color: transparent; 
+    }
+
+.restaurantNew {
+    background-color: $green;
+    color:darken($color:$green,$amount: 40);
+    font-weight: 500;
+    width: 25%;
+    padding: 3% 0 3% 0;
+    box-shadow: 0 0 10px #c2c1c1;
+    border-radius: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}

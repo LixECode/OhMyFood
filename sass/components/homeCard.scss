@@ -1,8 +1,7 @@
 .homeCard {
     background-color: #f2f2f2;
-    width: 450px;
+    width: 400px;
     margin-top: 20px;
-    margin-left: 20px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -12,13 +11,13 @@
     font-size: 20px;
     font-weight: 700;
     box-shadow: 5px 5px 15px #c2c1c1;
-    display: flex;
-    justify-content: flex-start;
-    
+
     ul{
         display: flex;
         align-items: center;
-        justify-items: space-between;
+        justify-content: space-evenly;
+        position : relative;
+        padding-right: 50px;
     }
 
     li {
@@ -38,6 +37,13 @@
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
         font-weight: 400;
+        position: absolute;
+        left: -20px;
+    }
+
+    li:nth-child(3) {
+        display: flex;
+        justify-self: start;
     }
 
     i {

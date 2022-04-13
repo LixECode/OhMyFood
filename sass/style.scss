@@ -1,5 +1,5 @@
 @import "base/reset.scss";
-@import "base/variables.scss";
+@import "utils/variables.scss";
 @import "components/button.scss";
 @import "components/homeCard.scss";
 
@@ -10,4 +10,5 @@
 body {
     width: 768px;
     background: white;
+    margin: 0 auto;
 }

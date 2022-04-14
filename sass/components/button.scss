@@ -14,4 +14,9 @@ button {
     font-size: 15px;
     box-shadow: 5px 5px 15px #c2c1c1;
     cursor: pointer;
+
+    &:hover {
+        opacity: 80%;
+        box-shadow: 5px 5px 15px darken($color:$shadow,$amount: 20);
+    }
 }

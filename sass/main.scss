@@ -1,0 +1,12 @@
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/mixins";
+
+@import "base/base";
+@import "base/typography";
+@import "base/normalize";
+
+@import "components/button.scss";
+@import "components/homeCard.scss";
+@import "components/restaurantCard.scss";
+@import "components/menuCard.scss";

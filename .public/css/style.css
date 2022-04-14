@@ -504,18 +504,11 @@ button:hover {
   line-height: 25px;
 }
 
-.restaurantHeart ul {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .fa-heart {
   position: absolute;
   top: -10px;
   right: 0;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .heartSolid {
@@ -538,6 +531,39 @@ button:hover {
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.menuCard {
+  background-color: white;
+  width: 400px;
+  margin-top: 20px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  padding: 10px 0 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 5px 5px 15px #c2c1c1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-end;
+  padding: 3% 4% 3% 4%;
+  line-height: 25px;
+}
+
+.menuPrice {
+  display: flex;
+  align-items: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */

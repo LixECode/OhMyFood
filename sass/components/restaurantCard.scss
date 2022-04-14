@@ -19,15 +19,6 @@
     a:visited {
         color: black;
     }
-
-    img {
-        object-fit: cover;
-        height: 60%;
-        width: 100%;
-        border-top-right-radius: 18px;
-        border-top-left-radius: 18px;
-    }
-
     .restaurantNew {
         display: flex;
         justify-content: center;
@@ -47,6 +38,24 @@
             -o-border-radius: 12px;
         }
 }
+
+.restaurantCard img {
+    object-fit: cover;
+    height: 60%;
+    width: 100%;
+    border-top-right-radius: 18px;
+    border-top-left-radius: 18px;
+
+}
+
+.img2 {
+    height: 36%!important;
+}
+
+.img4 {
+    height: 58%!important;
+}
+
 
 .restaurantTitle {
     display: flex;

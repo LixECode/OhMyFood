@@ -9,7 +9,7 @@
 
 body {
   width: 768px;
-  padding-left: 300px;
+  padding-left: 100px;
 }
 
 h4 {
@@ -379,6 +379,10 @@ button {
   box-shadow: 5px 5px 15px #c2c1c1;
   cursor: pointer;
 }
+button:hover {
+  opacity: 80%;
+  box-shadow: 5px 5px 15px #8f8e8e;
+}
 
 .homeCard {
   background-color: #f2f2f2;
@@ -456,13 +460,6 @@ button {
 .restaurantCard a:visited {
   color: black;
 }
-.restaurantCard img {
-  object-fit: cover;
-  height: 60%;
-  width: 100%;
-  border-top-right-radius: 18px;
-  border-top-left-radius: 18px;
-}
 .restaurantCard .restaurantNew {
   display: flex;
   justify-content: center;
@@ -480,6 +477,22 @@ button {
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
+}
+
+.restaurantCard img {
+  object-fit: cover;
+  height: 60%;
+  width: 100%;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+}
+
+.img2 {
+  height: 36% !important;
+}
+
+.img4 {
+  height: 58% !important;
 }
 
 .restaurantTitle {

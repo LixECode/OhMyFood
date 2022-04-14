@@ -1,4 +1,5 @@
 .restaurantCard { 
+
     margin-top: 20px; 
     width: 320px; 
     height: 250px; 
@@ -12,14 +13,39 @@
     -moz-border-radius: 18px;
     -ms-border-radius: 18px;
     -o-border-radius: 18px;
+    color: black;
+    position: relative;
+
+    a:visited {
+        color: black;
+    }
 
     img {
         object-fit: cover;
-        height: 70%;
+        height: 60%;
         width: 100%;
         border-top-right-radius: 18px;
         border-top-left-radius: 18px;
     }
+
+    .restaurantNew {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+            background-color: $green;
+            color:darken($color:$green,$amount: 40);
+            font-weight: 600;
+            width: 27%;
+            padding: 2% 0 2% 0;
+            box-shadow: 0 0 10px #c2c1c1;
+            border-radius: 12px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+        }
 }
 
 .restaurantTitle {
@@ -27,32 +53,43 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 4%;
+    padding: 3% 6% 3% 4%;
     line-height: 25px;
+}
 
-    i {
-        font-size: 20px;
-        cursor: pointer;
+.restaurantHeart ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fa-heart {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    font-size: 20px;
+}
+
+.heartSolid {
+    color: transparent;
+    opacity: 0;
+    transition: all 1500ms ease;
+    -webkit-transition: all 1500ms ease;
+    -moz-transition: all 1500ms ease;
+    -ms-transition: all 1500ms ease;
+    -o-transition: all 1500ms ease;
+}
+
+.heartRegular:hover {
+    color: transparent;
+    opacity: 0;
     }
 
-    }
-
-    .fa-solid {
-        background: linear-gradient(to bottom, $purple, $pink);
-	    -webkit-background-clip: text;
-	    -webkit-text-fill-color: transparent; 
-    }
-
-.restaurantNew {
-    background-color: $green;
-    color:darken($color:$green,$amount: 40);
-    font-weight: 500;
-    width: 25%;
-    padding: 3% 0 3% 0;
-    box-shadow: 0 0 10px #c2c1c1;
-    border-radius: 12px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+.heartSolid:hover {
+        opacity: 1;
+        background: linear-gradient($purple, $pink);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 }

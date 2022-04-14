@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href=".public/css/style.css">
 <script src="https://kit.fontawesome.com/ba64d1ea0b.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,12 +21,28 @@
             <li>Choisissez un restaurant</li>
         </ul>
     </article>
-    
-    <div class="restaurantNew"><p>Nouveau</p></div>
+
+    <article class="homeCard"> 
+        <ul>
+            <li>2</li>
+            <li><i class="fa-regular fa-list"></i></li>
+            <li>Composez votre menu</li>
+        </ul>
+    </article>
+
+    <article class="homeCard"> 
+        <ul>
+            <li>3</li>
+            <li><i class="fa-regular fa-store"></i></li>
+            <li>Dégustez un restaurant</li>
+        </ul>
+    </article>
 
     <article class="restaurantCard">
+        <a href="#">
 
-        <img src="assets/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+        <img src=".public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+        <div class="restaurantNew"><p>Nouveau</p></div>
 
         <div class="restaurantTitle">
 
@@ -36,10 +52,14 @@
         </div>
 
         <div class="restaurantHeart">
-            <i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i>
+            <ul>
+            <li><i class="fa-regular fa-heart heartRegular"></i></li>
+            <li><i class="fa-solid fa-heart heartSolid"></i></li>
+            </ul>
         </div>
 
         </div>
+    </a>
     </article>
 
     <div class="menuCard"></div>

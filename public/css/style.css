@@ -504,6 +504,10 @@ button:hover {
   line-height: 25px;
 }
 
+.restaurantHeart {
+  position: relative;
+}
+
 .fa-heart {
   position: absolute;
   top: -10px;
@@ -536,34 +540,120 @@ button:hover {
 .menuCard {
   background-color: white;
   width: 400px;
-  margin-top: 20px;
+  height: 100%;
+  margin-bottom: 20px;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
-  padding: 10px 0 10px 0;
   font-size: 20px;
   font-weight: 700;
   box-shadow: 5px 5px 15px #c2c1c1;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menuCard:hover .menuCardHover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  width: 20%;
+  height: 76px;
+  padding: 0;
+  font-size: 25px;
+  color: white;
+  background-color: #99E2D0;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border: 2px solid #99E2D0;
+  animation-name: menuCardHoverTransform;
+  animation-duration: 0.2s;
+}
+.menuCard:hover .menuCardHover i {
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+@keyframes menuCardHoverTransform {
+  from {
+    width: 0;
+  }
+  50% {
+    width: 10%;
+  }
+  to {
+    width: 20%;
+  }
 }
 
+.menuCard1 {
+  animation-name: menuCardOpacity, menuCardScale;
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
+
+.menuCard2 {
+  animation-name: menuCardOpacity, menuCardScale;
+  animation-duration: 2s;
+  animation-delay: 0.1s;
+}
+
+.menuCard3 {
+  animation-name: menuCardOpacity, menuCardScale;
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+}
+
+@keyframes menuCardOpacity {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes menuCardScale {
+  from {
+    margin-top: 20px;
+  }
+  50% {
+    margin-top: 10px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
 .menuTitle {
+  width: 75%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-self: flex-end;
-  padding: 3% 4% 3% 4%;
   line-height: 25px;
+  padding: 3%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menuPrice {
+  width: 20px;
   display: flex;
-  align-items: flex-end;
+  padding: 3%;
+}
+
+.menuCardHover {
+  width: 0px;
+  height: 0px;
+  font-size: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,4 @@
 .restaurantCard { 
-
     margin-top: 20px; 
     width: 320px; 
     height: 250px; 
@@ -64,6 +63,10 @@
     align-items: center;
     padding: 3% 6% 3% 4%;
     line-height: 25px;
+}
+
+.restaurantHeart {
+    position: relative;
 }
 
 .fa-heart {

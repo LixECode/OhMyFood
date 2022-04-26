@@ -717,4 +717,24 @@ button:hover {
   align-items: center;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 30px 0 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 25px;
+  font-weight: 400;
+}
+footer img {
+  height: 20px;
+  margin-bottom: 15px;
+  filter: invert(1);
+}
+footer i {
+  padding-right: 15px;
+  font-size: 12px;
+}
+
 /*# sourceMappingURL=style.css.map */

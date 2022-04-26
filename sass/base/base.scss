@@ -8,6 +8,24 @@
 }
 
 body {
-    width: 768px;
-    padding-left: 100px;
+    max-width: 768px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+section {
+    margin-top: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin-top: 30px;
+}
+
+
+h2 {
+    font-size: 15px;
+    font-weight: 300;
 }

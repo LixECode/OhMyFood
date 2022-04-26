@@ -8,8 +8,25 @@
 }
 
 body {
-  width: 768px;
-  padding-left: 100px;
+  max-width: 768px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+section {
+  margin-top: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 15px;
+  font-weight: 300;
 }
 
 h4 {
@@ -365,19 +382,19 @@ template {
 button {
   background-color: #9356DC;
   width: 200px;
-  margin-top: 20px;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  padding: 20px 5px 20px 5px;
+  padding: 15px 5px 15px 5px;
   border-style: none;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
   font-size: 15px;
   box-shadow: 5px 5px 15px #c2c1c1;
   cursor: pointer;
+  margin: 30px 0 30px 0;
 }
 button:hover {
   opacity: 80%;
@@ -654,6 +671,41 @@ button:hover {
   width: 0px;
   height: 0px;
   font-size: 0px;
+}
+
+.global {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding-bottom: 30px;
+  white-space: normal;
+  text-align: center;
+}
+.global h1, .global h2 {
+  padding: 0 40px 0 40px;
+}
+.global h1 {
+  font-size: 25px;
+}
+
+.globalLocation {
+  background-color: #eaeaea;
+  width: 100%;
+}
+.globalLocation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3% 0 3% 0;
+}
+.globalLocation ul li {
+  font-weight: 500;
+}
+.globalLocation ul i {
+  padding-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

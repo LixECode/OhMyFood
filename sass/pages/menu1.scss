@@ -1,0 +1,39 @@
+.containerMenu1 {
+    position: relative;
+}
+
+main {
+    width: 100%;
+    background-color: $background;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 190px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 0 4% 0 4%;
+
+        h1 {
+            font-weight: 900;
+            font-style: italic;
+        }
+
+        h2 {
+            border-bottom : 2px solid $green;
+            padding-bottom: 1%;
+        }
+}
+
+.menu1EntryTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5%;
+}
+
+.cardEntry {
+    width: 100%;
+    margin-top: 10px;
+}

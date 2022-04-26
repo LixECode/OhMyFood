@@ -13,8 +13,13 @@ body {
   padding-right: 2%;
 }
 
-section {
-  margin-top: 20px;
+h2 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 25px;
 }
 
 header {
@@ -22,11 +27,6 @@ header {
   justify-content: center;
   height: 30px;
   margin-top: 30px;
-}
-
-h2 {
-  font-size: 15px;
-  font-weight: 300;
 }
 
 h4 {
@@ -403,8 +403,7 @@ button:hover {
 
 .homeCard {
   background-color: #f2f2f2;
-  width: 400px;
-  margin-top: 20px;
+  width: 100%;
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -414,6 +413,7 @@ button:hover {
   font-size: 20px;
   font-weight: 700;
   box-shadow: 5px 5px 15px #c2c1c1;
+  margin-top: 30px;
 }
 .homeCard ul {
   display: flex;
@@ -459,8 +459,9 @@ button:hover {
 
 .restaurantCard {
   margin-top: 20px;
-  width: 320px;
-  height: 250px;
+  min-width: 320px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -498,18 +499,10 @@ button:hover {
 
 .restaurantCard img {
   object-fit: cover;
-  height: 60%;
+  height: 160px;
   width: 100%;
   border-top-right-radius: 18px;
   border-top-left-radius: 18px;
-}
-
-.img2 {
-  height: 36% !important;
-}
-
-.img4 {
-  height: 58% !important;
 }
 
 .restaurantTitle {
@@ -706,6 +699,22 @@ button:hover {
 }
 .globalLocation ul i {
   padding-right: 15px;
+}
+
+.workingCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant {
+  background-color: #eaeaea;
+}
+
+.restaurantCardBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,8 @@
 .restaurantCard { 
     margin-top: 20px; 
-    width: 320px; 
-    height: 250px; 
+    min-width: 320px;
+    width: 100%;
+    height: auto;
     display: flex; 
     flex-direction: column; 
     justify-content: space-between;
@@ -40,21 +41,12 @@
 
 .restaurantCard img {
     object-fit: cover;
-    height: 60%;
+    height: 160px;
     width: 100%;
     border-top-right-radius: 18px;
     border-top-left-radius: 18px;
 
 }
-
-.img2 {
-    height: 36%!important;
-}
-
-.img4 {
-    height: 58%!important;
-}
-
 
 .restaurantTitle {
     display: flex;

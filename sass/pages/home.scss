@@ -39,3 +39,19 @@
     }
 }
 
+.workingCard {
+display: flex;
+flex-direction: column;
+}
+
+
+.restaurant {
+    background-color: #eaeaea;
+}
+
+.restaurantCardBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

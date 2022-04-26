@@ -23,9 +23,29 @@ h3 {
 }
 
 header {
+    width: 100%;
+    ul {
     display: flex;
-    justify-content: center;
-    height: 30px;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
     margin-top: 30px;
+    font-size: 20px;
+
+    img {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    i {
+       padding-left: 20px;
+    }
+    }
+
+    .imgMenu {
+        height: auto;
+        width: 100%;
+    }
 }
 

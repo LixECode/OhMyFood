@@ -1,5 +1,9 @@
+.sectionGlobal,
+.sectionWorking {
+    margin-bottom: 10%;
+}
 
-.global {
+.sectionGlobal {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -19,7 +23,7 @@
     }
 }
 
-.globalLocation {
+.boxLocationGlobal {
     background-color: #eaeaea;
     width: 100%;
 
@@ -39,17 +43,25 @@
     }
 }
 
-.workingCard {
+.sectionWorking {
+    padding: 1% 1% 1% 6%;
+}
+
+.boxCardWorking {
 display: flex;
 flex-direction: column;
 }
 
 
-.restaurant {
+.sectionRestaurant {
     background-color: #eaeaea;
 }
 
-.restaurantCardBox {
+.boxRestaurant {
+    padding: 15% 5% 5% 5%;
+}
+
+.boxCardRestaurant {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,24 +69,5 @@ flex-direction: column;
 }
 
 
-footer {
-    background-color: #353535;
-    color: white;
-    padding: 30px 0 30px 20px;
-    display : flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    line-height: 25px;
-    font-weight: 400;
 
-    img {
-        height: 20px;
-        margin-bottom: 15px;
-        filter: invert(1);
-    }
 
-    i {
-        padding-right: 15px;
-        font-size: 12px;
-    }
-}

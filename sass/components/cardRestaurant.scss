@@ -1,4 +1,4 @@
-.restaurantCard { 
+.cardRestaurant { 
     margin-top: 20px; 
     min-width: 320px;
     width: 100%;
@@ -19,7 +19,7 @@
     a:visited {
         color: black;
     }
-    .restaurantNew {
+    .newCardRestaurant{
         display: flex;
         justify-content: center;
         position: absolute;
@@ -39,7 +39,7 @@
         }
 }
 
-.restaurantCard img {
+.cardRestaurant img {
     object-fit: cover;
     height: 160px;
     width: 100%;
@@ -48,7 +48,7 @@
 
 }
 
-.restaurantTitle {
+.titleCardRestaurant {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,7 +57,7 @@
     line-height: 25px;
 }
 
-.restaurantHeart {
+.heartCardRestaurant {
     position: relative;
 }
 

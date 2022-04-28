@@ -1,18 +1,5 @@
-.containerMenu1 {
-    position: relative;
-}
 
-main {
-    width: 100%;
-    background-color: $background;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 190px;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    padding: 0 4% 0 4%;
+.mainMenu {
 
         h1 {
             font-weight: 900;
@@ -25,7 +12,7 @@ main {
         }
 }
 
-.menu1EntryTitle {
+.menuEntryTitle {
     display: flex;
     flex-direction: row;
     align-items: center;

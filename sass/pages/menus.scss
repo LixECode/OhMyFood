@@ -1,26 +1,7 @@
-
 .mainMenu {
-
-        h1 {
-            font-weight: 900;
-            font-style: italic;
-        }
-
-        h2 {
-            border-bottom : 2px solid $green;
-            padding-bottom: 1%;
-        }
+    background-color: $background;
 }
 
-.menuEntryTitle {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 5%;
-}
+.menuTitle {
 
-.cardEntry {
-    width: 100%;
-    margin-top: 10px;
 }

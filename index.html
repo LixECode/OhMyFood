@@ -11,15 +11,20 @@
 <link rel="stylesheet" href="./public/css/style.css">
 <script src="https://kit.fontawesome.com/ba64d1ea0b.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="container">
 
 <header>
-<img src="public/img/logo/ohmyfood.png" alt="logo oh my food">
+    <ul>
+    <li><i class="fa-solid fa-arrow-left indexArrow"></i></li>
+    <li><img src="public/img/logo/ohmyfood.png" alt="logo oh my food"></li>
+    </ul>
 </header>
+
 <main>
-<section id="global">
-    <div class="global">
-        <div class="globalLocation">
+
+<section class="sectionGlobal">
+    <div class="boxGlobal">
+        <div class="boxLocationGlobal">
             <ul>
                 <li><i class="fa-solid fa-location-dot"></i></li>
                 <li>Paris, Belleville</li>
@@ -31,11 +36,11 @@
     </div>
 </section>
 
-<section>
-    <div class="working">
+<section class="sectionWorking">
+    <div>
         <h3>Fonctionnement</h3>
-        <div class="workingCard">
-            <article class="homeCard"> 
+        <div class="boxCardWorking">
+            <article class="cardWorking"> 
                 <ul>
                     <li>1</li>
                     <li><i class="fa-solid fa-mobile-screen-button"></i></li>
@@ -43,7 +48,7 @@
                 </ul>
             </article>
         
-            <article class="homeCard"> 
+            <article class="cardWorking"> 
                 <ul>
                     <li>2</li>
                     <li><i class="fa-solid fa-list"></i></li>
@@ -51,7 +56,7 @@
                 </ul>
             </article>
         
-            <article class="homeCard"> 
+            <article class="cardWorking"> 
                 <ul>
                     <li>3</li>
                     <li><i class="fa-solid fa-store"></i></li>
@@ -62,23 +67,23 @@
     </div>
 </section>
 
-<section>
-<div class="restaurant">
+<section class="sectionRestaurant">
+<div class="boxRestaurant">
     <h3>Restaurants</h3>
-    <div class="restaurantCardBox">
-        <article class="restaurantCard">
+    <div class="boxCardRestaurant">
+        <article class="cardRestaurant">
             <a href="#">
             <img src="./public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-            <div class="restaurantNew"><p>Nouveau</p></div>
+            <div class="newCardRestaurant"><p>Nouveau</p></div>
     
-            <div class="restaurantTitle">
+            <div class="titleCardRestaurant">
     
             <div>
             <h4>La palette du goût</h4>
             <h5>Ménilmontant</h5>
             </div>
     
-            <div class="restaurantHeart">
+            <div class="heartCard">
                 <ul>
                 <li><i class="fa-regular fa-heart heartRegular"></i></li>
                 <li><i class="fa-solid fa-heart heartSolid"></i></li>
@@ -89,19 +94,19 @@
         </a>
         </article>
     
-        <article class="restaurantCard">
+        <article class="cardRestaurant">
             <a href="#">
             <img src="./public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-            <div class="restaurantNew"><p>Nouveau</p></div>
+            <div class="newCardRestaurant"><p>Nouveau</p></div>
     
-            <div class="restaurantTitle">
+            <div class="titleCardRestaurant">
     
             <div>
             <h4>La note enchantée</h4>
             <h5>Charonne</h5>
             </div>
     
-            <div class="restaurantHeart">
+            <div class="heartCard">
                 <ul>
                 <li><i class="fa-regular fa-heart heartRegular"></i></li>
                 <li><i class="fa-solid fa-heart heartSolid"></i></li>
@@ -112,18 +117,18 @@
         </a>
         </article>
     
-        <article class="restaurantCard">
-            <a href="#">
+        <article class="cardRestaurant">
+            <a href="aLaFrancaise.html">
             <img src="./public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
     
-            <div class="restaurantTitle">
+            <div class="titleCardRestaurant">
     
             <div>
             <h4>Á la française</h4>
             <h5>Cité Rouge</h5>
             </div>
     
-            <div class="restaurantHeart">
+            <div class="heartCard">
                 <ul>
                 <li><i class="fa-regular fa-heart heartRegular"></i></li>
                 <li><i class="fa-solid fa-heart heartSolid"></i></li>
@@ -134,18 +139,18 @@
         </a>
         </article>
         
-        <article class="restaurantCard">
+        <article class="cardRestaurant">
             <a href="#">
             <img src="./public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
     
-            <div class="restaurantTitle">
+            <div class="titleCardRestaurant">
     
             <div>
             <h4>Le délice des sens</h4>
             <h5>Folie-Méricourt</h5>
             </div>
     
-            <div class="restaurantHeart">
+            <div class="heartCard">
                 <ul>
                 <li><i class="fa-regular fa-heart heartRegular"></i></li>
                 <li><i class="fa-solid fa-heart heartSolid"></i></li>
@@ -158,8 +163,8 @@
     </div>
 
 </div>
-
 </section>
+
 </main>
 
 <footer>
@@ -171,23 +176,6 @@
     <li>Contact</li>
     </ul>
 </footer>
-<br>
-<br>
-<br>
-<br>
-<br>
-  
-    <button>Commander</button>
-
-
-
-
- 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
 </body>
 </html>

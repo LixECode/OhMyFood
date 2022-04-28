@@ -1,4 +1,4 @@
-.homeCard {
+.cardWorking {
     background-color: #f2f2f2;
     width: 100%;
     border-radius: 25px;
@@ -37,6 +37,7 @@
         -ms-border-radius: 50%;
         -o-border-radius: 50%;
         font-weight: 400;
+        font-size: 15px;
         position: absolute;
         left: -20px;
     }
@@ -52,7 +53,7 @@
     }
 }
 
-.homeCard:hover {
+.cardWorking:hover {
     background-color: lighten($color: $purple, $amount: 35);
 
     i {

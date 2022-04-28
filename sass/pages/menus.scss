@@ -1,0 +1,50 @@
+.mainMenu {
+    background-color: $background;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4%;
+    position: relative;
+
+    h1 {
+        font-size: 40px;
+        font-style: italic;
+    }
+}
+
+
+.titleMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: -100px;
+    background-color: $background;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 3% 5% 0 5%;
+
+    .heartCard {
+        right: 20px;
+    }
+}
+
+.sectionMenu {
+    width: 100%;
+    margin-bottom: 3%;
+
+    h2 {
+        font-size: 25px;
+        border-bottom: 4px solid $green;
+        padding-bottom: 1%;
+        width: 60px;
+    }
+
+    .cardMenu {
+margin-top: 2%;
+    }
+}

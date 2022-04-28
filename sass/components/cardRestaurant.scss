@@ -1,4 +1,4 @@
-.restaurantCard { 
+.cardRestaurant { 
     margin-top: 20px; 
     min-width: 320px;
     width: 100%;
@@ -19,27 +19,27 @@
     a:visited {
         color: black;
     }
-    .restaurantNew {
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-            background-color: $green;
-            color:darken($color:$green,$amount: 40);
+    .newCardRestaurant{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color:darken($color:$green,$amount:10);
+            color:darken($color:$green,$amount:40);
             font-weight: 600;
             width: 27%;
             padding: 2% 0 2% 0;
-            box-shadow: 0 0 10px #c2c1c1;
-            border-radius: 12px;
-            -webkit-border-radius: 3px;
-            -moz-border-radius: 12px;
-            -ms-border-radius: 12px;
-            -o-border-radius: 12px;
-        }
+            box-shadow: 5px 5px 15px darken($color:$shadow,$amount:20);
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+}
 }
 
-.restaurantCard img {
+.cardRestaurant img {
     object-fit: cover;
     height: 160px;
     width: 100%;
@@ -48,7 +48,7 @@
 
 }
 
-.restaurantTitle {
+.titleCardRestaurant {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,15 +57,16 @@
     line-height: 25px;
 }
 
-.restaurantHeart {
+.heartCard {
     position: relative;
+    cursor: pointer;
 }
 
 .fa-heart {
     position: absolute;
-    top: -10px;
+    top: -20px;
     right: 0;
-    font-size: 23px;
+    font-size: 35px;
 }
 
 .heartSolid {

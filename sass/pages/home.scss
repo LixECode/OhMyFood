@@ -23,9 +23,12 @@
     }
 }
 
+.boxGlobal {
+    width: 100%;
+}
+
 .boxLocationGlobal {
     background-color: #eaeaea;
-    width: 100%;
 
     ul {
         display: flex;
@@ -57,6 +60,7 @@ padding-right: 4%;
 
 .sectionRestaurant {
     background-color: #eaeaea;
+    padding-bottom: 10%;
 }
 
 .boxRestaurant {

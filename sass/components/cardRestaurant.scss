@@ -20,23 +20,23 @@
         color: black;
     }
     .newCardRestaurant{
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 15px;
-        right: 15px;
-            background-color: $green;
-            color:darken($color:$green,$amount: 40);
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color:darken($color:$green,$amount:10);
+            color:darken($color:$green,$amount:40);
             font-weight: 600;
             width: 27%;
             padding: 2% 0 2% 0;
-            box-shadow: 0 0 10px #c2c1c1;
-            border-radius: 12px;
-            -webkit-border-radius: 3px;
-            -moz-border-radius: 12px;
-            -ms-border-radius: 12px;
-            -o-border-radius: 12px;
-        }
+            box-shadow: 5px 5px 15px darken($color:$shadow,$amount:20);
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+}
 }
 
 .cardRestaurant img {

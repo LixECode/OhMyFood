@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-body {
+.container {
   max-width: 768px;
   padding-left: 2%;
   padding-right: 2%;
@@ -23,13 +23,13 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 25px;
+  font-weight: 700;
   padding-top: 2px;
 }
 
 h5 {
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -384,7 +384,7 @@ button {
   border-style: none;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
-  font-size: 15px;
+  font-size: 20px;
   box-shadow: 5px 5px 15px #c2c1c1;
   cursor: pointer;
   margin: 30px 0 30px 0;
@@ -508,7 +508,7 @@ button:hover {
   line-height: 25px;
 }
 
-.heartCardRestaurant {
+.heartCard {
   position: relative;
 }
 
@@ -551,7 +551,7 @@ button:hover {
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   box-shadow: 5px 5px 15px #c2c1c1;
   display: flex;
@@ -566,8 +566,7 @@ button:hover {
   justify-content: center;
   margin-left: 50px;
   width: 20%;
-  height: 73.5px;
-  padding: 0;
+  height: auto;
   font-size: 25px;
   color: white;
   background-color: #99E2D0;
@@ -642,10 +641,10 @@ button:hover {
   display: flex;
   flex-direction: column;
   line-height: 25px;
-  padding: 3%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding: 3%;
 }
 
 .menuPrice {
@@ -785,6 +784,52 @@ footer i {
 
 .mainMenu {
   background-color: #f6f6f6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4%;
+  position: relative;
+}
+.mainMenu h1 {
+  font-size: 40px;
+  font-style: italic;
+}
+
+.titleMenu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: -120px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 3% 5% 0 5%;
+}
+.titleMenu .heartCard {
+  right: 40px;
+  bottom: 10px;
+}
+.titleMenu .heartCard i {
+  font-size: 40px;
+}
+
+.sectionMenu {
+  width: 100%;
+  margin-bottom: 3%;
+}
+.sectionMenu h2 {
+  font-size: 25px;
+  border-bottom: 4px solid #99E2D0;
+  padding-bottom: 1%;
+  width: 60px;
+}
+.sectionMenu .cardMenu {
+  margin-top: 2%;
 }
 
 /*# sourceMappingURL=style.css.map */

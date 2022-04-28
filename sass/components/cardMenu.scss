@@ -9,7 +9,7 @@
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 700;
     box-shadow: 5px 5px 15px #c2c1c1;
     display: flex;
@@ -26,8 +26,7 @@
             justify-content: center;
             margin-left: 50px;
             width: 20%;
-            height: 73.5px;
-            padding: 0;
+            height: auto;
             font-size: 25px;
             color: white;
             background-color: $green;
@@ -128,10 +127,10 @@
     display: flex;
     flex-direction: column;
         line-height: 25px;
-        padding: 3%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        padding: 3%;
     }
 
     .menuPrice {

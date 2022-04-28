@@ -59,13 +59,14 @@
 
 .heartCard {
     position: relative;
+    cursor: pointer;
 }
 
 .fa-heart {
     position: absolute;
-    top: -10px;
+    top: -20px;
     right: 0;
-    font-size: 23px;
+    font-size: 35px;
 }
 
 .heartSolid {

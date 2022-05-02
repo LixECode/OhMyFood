@@ -1,6 +1,9 @@
 
 .menuCard {
-    background-color: white;
+    @include space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: lighten($color:$black,$amount:100);
     width: 100%;
     margin-bottom: 20px;
     border-radius: 18px;
@@ -10,18 +13,12 @@
     -o-border-radius: 18px;
     font-weight: 700;
     box-shadow: 5px 5px 15px #c2c1c1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    align-items: flex-end;
+ 
 
     &:hover {
 
         .menuCardHover {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex;
             margin-left: 50px;
             width: 15%;
             height: 100%;

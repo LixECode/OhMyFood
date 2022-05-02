@@ -1,7 +1,21 @@
-@mixin rotate ($rotation: 10deg) {
-
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@mixin transform($transform) {
+@mixin flexCenterColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin shadow {
+    box-shadow: 5px 5px 15px lighten($color:$black,$amount:78);
 }

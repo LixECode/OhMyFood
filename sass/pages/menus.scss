@@ -1,10 +1,8 @@
 .mainMenu {
     background-color: $background;
     width: 100%;
-    display: flex;
+    @include flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 4%;
     position: relative;
 
@@ -16,11 +14,10 @@
 
 
 .titleMenu {
+    @include space-between;
     width: 100%;
-    display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     position: absolute;
     top: -70px;
     background-color: $background;
@@ -30,7 +27,7 @@
 
     .heartCard {
         right: 20px;
-        top: 6px;
+        top: -18px;
     }
 }
 
@@ -39,12 +36,11 @@
     margin-bottom: 3%;
 
     h2 {
+        width: 60px;
         font-size: 18px;
         border-bottom: 4px solid $green;
-        padding-bottom: 1%;
-        padding-top: 2%;
+        padding: 2% 0 1% 0;
         margin-left: 2%;
-        width: 60px;
     }
 
     .cardMenu {

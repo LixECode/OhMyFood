@@ -8,9 +8,18 @@
 }
 
 .container {
-  max-width: 768px;
+  min-width: 370px;
+  max-width: 1444px;
   padding-left: 2%;
   padding-right: 2%;
+}
+
+a:focus {
+  color: black;
+}
+
+a:visited {
+  color: black;
 }
 
 h2 {
@@ -23,13 +32,13 @@ h3 {
 }
 
 h4 {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 700;
   padding-top: 2px;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -373,18 +382,18 @@ template {
 }
 
 button {
-  width: 60%;
+  width: 50%;
   background-color: #9356DC;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  padding: 4% 0 4% 0;
+  padding: 4% 2% 4% 2%;
   border-style: none;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   box-shadow: 5px 5px 15px #c2c1c1;
   cursor: pointer;
   margin: 30px 0 30px 0;
@@ -395,7 +404,8 @@ button:hover {
 }
 
 .cardWorking {
-  background-color: #f2f2f2;
+  box-shadow: 5px 5px 15px #c7c7c7;
+  background-color: whitesmoke;
   width: 100%;
   border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -403,17 +413,17 @@ button:hover {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
   padding: 30px 0 30px 0;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
-  box-shadow: 5px 5px 15px #c2c1c1;
   margin-top: 30px;
+  cursor: pointer;
 }
 .cardWorking ul {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   position: relative;
-  padding-right: 50px;
+  padding-right: 30px;
 }
 .cardWorking li {
   display: flex;
@@ -442,6 +452,7 @@ button:hover {
 .cardWorking i {
   color: grey;
   font-size: 25px;
+  padding-left: 10px;
 }
 
 .cardWorking:hover {
@@ -452,15 +463,15 @@ button:hover {
 }
 
 .cardRestaurant {
+  box-shadow: 5px 5px 15px #c7c7c7;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  flex-direction: column;
   margin-top: 20px;
   min-width: 320px;
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: 5px 5px 15px #c2c1c1;
-  background-color: white;
   border-radius: 18px;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
@@ -475,6 +486,7 @@ button:hover {
 .cardRestaurant .newCardRestaurant {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -483,7 +495,8 @@ button:hover {
   font-weight: 600;
   width: 27%;
   padding: 2% 0 2% 0;
-  box-shadow: 5px 5px 15px #8f8e8e;
+  box-shadow: 5px 5px 15px #c7c7c7;
+  box-shadow: #8f8e8e;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -501,9 +514,7 @@ button:hover {
 
 .titleCardRestaurant {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   padding: 3% 6% 3% 4%;
   line-height: 25px;
 }
@@ -515,9 +526,9 @@ button:hover {
 
 .fa-heart {
   position: absolute;
-  top: -20px;
+  top: 5px;
   right: 0;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .heartSolid {
@@ -535,7 +546,7 @@ button:hover {
   opacity: 0;
 }
 
-.heartSolid:hover {
+.heartSolid:active {
   opacity: 1;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -543,39 +554,37 @@ button:hover {
 }
 
 .menuCard {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
   background-color: white;
   width: 100%;
   margin-bottom: 20px;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-  font-size: 25px;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
   font-weight: 700;
   box-shadow: 5px 5px 15px #c2c1c1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 .menuCard:hover .menuCardHover {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-left: 50px;
-  width: 20%;
+  width: 15%;
   height: 100%;
   font-size: 25px;
   color: white;
   background-color: #99E2D0;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
   border: 2px solid #99E2D0;
   animation-name: menuCardHoverTransform;
   animation-duration: 0.2s;
-  padding: 6.8% 0 6.8% 0;
+  padding: 4.9% 0 4.8% 0;
   cursor: pointer;
 }
 .menuCard:hover .menuCardHover i {
@@ -594,7 +603,7 @@ button:hover {
     width: 10%;
   }
   to {
-    width: 20%;
+    width: 15%;
   }
 }
 
@@ -614,6 +623,12 @@ button:hover {
   animation-name: menuCardOpacity, menuCardScale;
   animation-duration: 2s;
   animation-delay: 0.2s;
+}
+
+.menuCard4 {
+  animation-name: menuCardOpacity, menuCardScale;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
 }
 
 @keyframes menuCardOpacity {
@@ -646,13 +661,14 @@ button:hover {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding: 4%;
+  padding: 3%;
 }
 
 .menuPrice {
   width: 20px;
   height: 100%;
   padding: 4% 4% 4% 0;
+  font-size: 15px;
 }
 
 .menuCardHover {
@@ -661,15 +677,22 @@ button:hover {
   font-size: 0px;
 }
 
+/*.loader {
+    background: linear-gradient(to top left, $purple, $pink);
+    z-index: 1000000000;
+    height: 100vh;
+    width: 100%;
+}*/
 header {
-  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
   padding-top: 15px;
 }
 header ul {
   display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
   padding-bottom: 10px;
@@ -685,21 +708,26 @@ header li:nth-of-type(2) img {
   width: 50%;
 }
 header i {
-  font-size: 30px;
+  font-size: 20px;
 }
 header div img {
   object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 300px;
 }
 header .indexArrow {
   display: none;
 }
 
+@media (max-width: 992px) {
+  header {
+    width: 100%;
+  }
+}
 footer {
   background-color: #353535;
   color: white;
-  padding: 30px 0 30px 40px;
+  padding: 5% 0 5% 6%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -710,6 +738,9 @@ footer img {
   height: 20px;
   margin-bottom: 15px;
   filter: invert(1);
+}
+footer a {
+  color: white;
 }
 footer i {
   padding-right: 15px;
@@ -722,18 +753,18 @@ footer i {
 }
 
 .sectionGlobal {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f6f6f6;
-  padding-bottom: 30px;
   white-space: normal;
   text-align: center;
+  width: 100%;
+  background-color: whitesmoke;
+  padding-bottom: 30px;
 }
 .sectionGlobal h1, .sectionGlobal h2 {
-  padding: 0 40px 0 40px;
+  padding: 0 6% 0 6%;
 }
 .sectionGlobal h1 {
   font-size: 25px;
@@ -744,12 +775,13 @@ footer i {
 }
 
 .boxLocationGlobal {
-  background-color: #eaeaea;
+  background-color: #ebebeb;
 }
 .boxLocationGlobal ul {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
   padding: 3% 0 3% 0;
 }
 .boxLocationGlobal ul li {
@@ -765,13 +797,14 @@ footer i {
 
 .boxCardWorking {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding: 0 4% 0 4%;
 }
 
 .sectionRestaurant {
-  background-color: #eaeaea;
+  background-color: #ebebeb;
   padding-bottom: 10%;
 }
 
@@ -781,34 +814,35 @@ footer i {
 
 .boxCardRestaurant {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .mainMenu {
   background-color: #f6f6f6;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 4%;
   position: relative;
 }
 .mainMenu h1 {
-  font-size: 40px;
-  font-style: italic;
+  font-size: 30px;
+  font-family: "Shrikhand", cursive;
+  letter-spacing: 1px;
 }
 
 .titleMenu {
-  width: 100%;
   display: flex;
+  justify-content: space-between;
+  width: 100%;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   position: absolute;
-  top: -100px;
+  top: -70px;
   background-color: #f6f6f6;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -816,6 +850,7 @@ footer i {
 }
 .titleMenu .heartCard {
   right: 20px;
+  top: -18px;
 }
 
 .sectionMenu {
@@ -823,13 +858,14 @@ footer i {
   margin-bottom: 3%;
 }
 .sectionMenu h2 {
-  font-size: 25px;
-  border-bottom: 4px solid #99E2D0;
-  padding-bottom: 1%;
   width: 60px;
+  font-size: 18px;
+  border-bottom: 4px solid #99E2D0;
+  padding: 2% 0 1% 0;
+  margin-left: 2%;
 }
 .sectionMenu .cardMenu {
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */

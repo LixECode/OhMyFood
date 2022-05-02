@@ -4,18 +4,16 @@
 }
 
 .sectionGlobal {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #f6f6f6;
-    padding-bottom: 30px;
+    
+    @include flexCenterColumn;
     white-space: normal;
     text-align: center;
+    width: 100%;
+    background-color: lighten($color:$black,$amount:96);
+    padding-bottom: 30px;
 
     h1, h2 {
-        padding: 0 40px 0 40px;
+        padding: 0 6% 0 6%;
     }
 
     h1 {
@@ -28,12 +26,11 @@
 }
 
 .boxLocationGlobal {
-    background-color: #eaeaea;
+    background-color: lighten($color:$black,$amount:92);
 
     ul {
-        display: flex;
+        @include flex;
         flex-direction: row;
-        justify-content: center;
         padding: 3% 0 3% 0;
 
         li {
@@ -51,15 +48,13 @@
 }
 
 .boxCardWorking {
-display: flex;
-flex-direction: column;
-padding-left: 4%;
-padding-right: 4%;
+    @include flexCenterColumn;
+padding: 0 4% 0 4%;
 }
 
 
 .sectionRestaurant {
-    background-color: #eaeaea;
+    background-color: lighten($color:$black,$amount:92);
     padding-bottom: 10%;
 }
 
@@ -68,10 +63,7 @@ padding-right: 4%;
 }
 
 .boxCardRestaurant {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexCenterColumn;
 }
 
 

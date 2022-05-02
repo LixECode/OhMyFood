@@ -1,13 +1,12 @@
 .cardRestaurant { 
+    @include shadow;
+    @include space-between;
+    background-color: lighten($color:$black,$amount:100);
+    flex-direction: column; 
     margin-top: 20px; 
     min-width: 320px;
     width: 100%;
     height: auto;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between;
-    box-shadow: 5px 5px 15px #c2c1c1; 
-    background-color: white;
     border-radius: 18px;
     -webkit-border-radius: 18px;
     -moz-border-radius: 18px;
@@ -20,8 +19,7 @@
         color: black;
     }
     .newCardRestaurant{
-            display: flex;
-            justify-content: center;
+            @include flex;
             position: absolute;
             top: 15px;
             right: 15px;
@@ -30,7 +28,8 @@
             font-weight: 600;
             width: 27%;
             padding: 2% 0 2% 0;
-            box-shadow: 5px 5px 15px darken($color:$shadow,$amount:20);
+            @include shadow;
+            box-shadow: darken($color:$shadow,$amount:20);
             border-radius: 4px;
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
@@ -49,10 +48,7 @@
 }
 
 .titleCardRestaurant {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include space-between;
     padding: 3% 6% 3% 4%;
     line-height: 25px;
 }
@@ -64,9 +60,9 @@
 
 .fa-heart {
     position: absolute;
-    top: -20px;
+    top: 5px;
     right: 0;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .heartSolid {
@@ -84,7 +80,7 @@
     opacity: 0;
     }
 
-.heartSolid:hover {
+.heartSolid:active {
         opacity: 1;
         background: linear-gradient($purple, $pink);
         -webkit-background-clip: text;

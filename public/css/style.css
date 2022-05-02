@@ -13,6 +13,14 @@
   padding-right: 2%;
 }
 
+a:focus {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
 h2 {
   font-size: 15px;
   font-weight: 300;
@@ -575,7 +583,7 @@ button:hover {
   border: 2px solid #99E2D0;
   animation-name: menuCardHoverTransform;
   animation-duration: 0.2s;
-  padding: 6.8% 0 6.8% 0;
+  padding: 5.8% 0 5.8% 0;
   cursor: pointer;
 }
 .menuCard:hover .menuCardHover i {
@@ -614,6 +622,12 @@ button:hover {
   animation-name: menuCardOpacity, menuCardScale;
   animation-duration: 2s;
   animation-delay: 0.2s;
+}
+
+.menuCard4 {
+  animation-name: menuCardOpacity, menuCardScale;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
 }
 
 @keyframes menuCardOpacity {

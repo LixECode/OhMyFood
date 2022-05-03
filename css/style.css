@@ -370,7 +370,7 @@ header .indexArrow {
 footer {
   background-color: #353535;
   color: white;
-  padding: 5% 0 5% 6%;
+  padding: 8% 0 8% 6%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -388,6 +388,11 @@ footer a {
 footer i {
   padding-right: 15px;
   font-size: 12px;
+}
+footer li:nth-of-type(1) {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  padding-bottom: 10px;
 }
 
 .sectionGlobal,

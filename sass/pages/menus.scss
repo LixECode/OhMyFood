@@ -1,3 +1,5 @@
+/*GLOBAL*/
+
 .mainMenu {
     background-color: $background;
     width: 100%;
@@ -32,6 +34,8 @@
     }
 }
 
+/*SECTION_MENU*/
+
 .sectionMenu {
     width: 100%;
     margin-bottom: 3%;
@@ -46,6 +50,6 @@
     }
 
     .cardMenu {
-margin-top: 5%;
+        margin-top: 5%;
     }
 }

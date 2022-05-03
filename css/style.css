@@ -1,3 +1,4 @@
+/*GLOBAL*/
 * {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -5,6 +6,10 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  padding: 0 2% 0 2%;
 }
 
 a:focus {
@@ -15,6 +20,7 @@ a:visited {
   color: black;
 }
 
+/*TYPOGRAPHIES*/
 h2 {
   font-size: 16px;
   font-weight: 300;
@@ -202,6 +208,7 @@ button:hover {
   -webkit-text-fill-color: transparent;
 }
 
+/*CARD_BOX*/
 .menuCard {
   display: flex;
   justify-content: space-between;
@@ -217,6 +224,7 @@ button:hover {
   -o-border-radius: 18px;
   font-weight: 700;
   box-shadow: 5px 5px 15px #c2c1c1;
+  /*CARD_ANIMATION*/
 }
 .menuCard .menuTitle {
   width: 75%;
@@ -388,6 +396,7 @@ footer li:nth-of-type(1) {
   padding-bottom: 10px;
 }
 
+/*LOADER*/
 .loading {
   align-items: center;
   animation: loadingOut 60s;
@@ -401,76 +410,6 @@ footer li:nth-of-type(1) {
   color: white;
   font-weight: 400;
   margin-bottom: 20%;
-}
-
-.boxLoading {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.boxLoadinglabel {
-  top: 50%;
-  position: absolute;
-  width: 380px;
-  color: #FFF;
-  text-align: center;
-}
-
-.boxLoadinglabel label {
-  font-size: 20px;
-  opacity: 0;
-  display: inline-block;
-}
-
-@keyframes loading {
-  0% {
-    opacity: 0;
-    transform: translateX(-300px);
-  }
-  33% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-  66% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(300px);
-  }
-}
-.boxLoadinglabellabel:nth-child(6) {
-  -webkit-animation: loading 3s infinite ease-in-out;
-  animation: loading 3s infinite ease-in-out;
-}
-
-.boxLoadinglabel label:nth-child(5) {
-  -webkit-animation: loading 3s 100ms infinite ease-in-out;
-  animation: loading 3s 100ms infinite ease-in-out;
-}
-
-.boxLoadinglabel label:nth-child(4) {
-  -webkit-animation: loading 3s 200ms infinite ease-in-out;
-  animation: loading 3s 200ms infinite ease-in-out;
-}
-
-.boxLoadinglabel label:nth-child(3) {
-  -webkit-animation: loading 3s 300ms infinite ease-in-out;
-  animation: loading 3s 300ms infinite ease-in-out;
-}
-
-.boxLoadinglabel label:nth-child(2) {
-  -webkit-animation: loading 3s 400ms infinite ease-in-out;
-  animation: loading 3s 400ms infinite ease-in-out;
-}
-
-.boxLoadinglabel label:nth-child(1) {
-  -webkit-animation: loading 3s 500ms infinite ease-in-out;
-  animation: loading 3s 500ms infinite ease-in-out;
 }
 
 /* diparition du loader */
@@ -487,6 +426,7 @@ footer li:nth-of-type(1) {
     position: absolute;
   }
 }
+/*SECTION_INFORMATIONS*/
 .sectionGlobal,
 .sectionWorking {
   margin-bottom: 10%;
@@ -502,7 +442,8 @@ footer li:nth-of-type(1) {
   width: 100%;
   background-color: whitesmoke;
 }
-.sectionGlobal h1, .sectionGlobal h2 {
+.sectionGlobal h1,
+.sectionGlobal h2 {
   padding: 0 10% 0 10%;
 }
 .sectionGlobal h1 {
@@ -531,6 +472,7 @@ footer li:nth-of-type(1) {
   padding-right: 15px;
 }
 
+/*SECTION_FONCTIONNEMENT*/
 .sectionWorking {
   padding: 1% 1% 8% 4%;
 }
@@ -543,6 +485,8 @@ footer li:nth-of-type(1) {
   padding: 0 4% 0 4%;
 }
 
+/*component card in components/cardWorking*/
+/*SECTION_RESTAURANT*/
 .sectionRestaurant {
   background-color: whitesmoke;
   padding-bottom: 10%;
@@ -559,6 +503,8 @@ footer li:nth-of-type(1) {
   flex-direction: column;
 }
 
+/*component card in components/cardRestaurant*/
+/*GLOBAL*/
 .mainMenu {
   background-color: #f6f6f6;
   width: 100%;
@@ -593,6 +539,7 @@ footer li:nth-of-type(1) {
   top: -18px;
 }
 
+/*SECTION_MENU*/
 .sectionMenu {
   width: 100%;
   margin-bottom: 3%;

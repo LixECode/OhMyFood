@@ -12,10 +12,10 @@ button {
     color: white;
     box-shadow: 5px 5px 15px #c2c1c1;
     cursor: pointer;
-    margin: 8% 0 15% 0!important;
+    margin: 8% 0 15% 0 !important;
 
     &:hover {
         opacity: 80%;
-        box-shadow: 5px 5px 15px darken($color:$shadow,$amount: 20);
+        box-shadow: 5px 5px 15px darken($color:$shadow, $amount: 20);
     }
 }

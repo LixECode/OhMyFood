@@ -1,6 +1,6 @@
 .cardWorking {
     @include shadow;
-    background-color: lighten($color:$black,$amount:96);
+    background-color: lighten($color:$black, $amount:96);
     width: 100%;
     border-radius: 25px;
     -webkit-border-radius: 25px;
@@ -13,11 +13,11 @@
     margin-top: 30px;
     cursor: pointer;
 
-    ul{
+    ul {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        position : relative;
+        position: relative;
     }
 
     li {
@@ -34,11 +34,11 @@
         font-size: 15px;
         position: absolute;
         left: -15px;
-}
+    }
 
-li:nth-child(2) {
-    margin: 0 6% 0 10%;
-}
+    li:nth-child(2) {
+        margin: 0 6% 0 10%;
+    }
 
     li:nth-child(3) {
         display: flex;
@@ -48,7 +48,7 @@ li:nth-child(2) {
     i {
         color: lighten($color: $black, $amount: 50);
         font-size: 18px;
-        }
+    }
 
 }
 
@@ -59,4 +59,3 @@ li:nth-child(2) {
         color: $purple;
     }
 }
-

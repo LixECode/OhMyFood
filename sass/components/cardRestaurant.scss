@@ -1,9 +1,9 @@
-.cardRestaurant { 
+.cardRestaurant {
     @include shadow;
     @include space-between;
-    background-color: lighten($color:$black,$amount:100);
-    flex-direction: column; 
-    margin-top: 20px; 
+    background-color: lighten($color:$black, $amount:100);
+    flex-direction: column;
+    margin-top: 20px;
     min-width: 320px;
     width: 100%;
     height: auto;
@@ -18,24 +18,25 @@
     a:visited {
         color: black;
     }
-    .newCardRestaurant{
-            @include flex;
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background-color:darken($color:$green,$amount:3);
-            color:darken($color:$green,$amount:40);
-            font-weight: 600;
-            width: 27%;
-            padding: 2% 0 2% 0;
-            @include shadow;
-            box-shadow: darken($color:$shadow,$amount:20);
-            border-radius: 4px;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            -ms-border-radius: 4px;
-            -o-border-radius: 4px;
-}
+
+    .newCardRestaurant {
+        @include flex;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: darken($color:$green, $amount:3);
+        color: darken($color:$green, $amount:40);
+        font-weight: 600;
+        width: 27%;
+        padding: 2% 0 2% 0;
+        @include shadow;
+        box-shadow: darken($color:$shadow, $amount:20);
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+    }
 }
 
 .cardRestaurant img {
@@ -78,11 +79,11 @@
 .heartRegular:hover {
     color: transparent;
     opacity: 0;
-    }
+}
 
 .heartSolid:hover {
-        opacity: 1;
-        background: linear-gradient($purple, $pink);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    opacity: 1;
+    background: linear-gradient($purple, $pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

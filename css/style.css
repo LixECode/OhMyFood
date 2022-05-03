@@ -52,7 +52,6 @@ button {
   border-style: none;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
-  font-size: 15px;
   box-shadow: 5px 5px 15px #c2c1c1;
   cursor: pointer;
   margin: 8% 0 15% 0 !important;
@@ -71,9 +70,9 @@ button:hover {
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
-  padding: 30px 0 30px 0;
-  font-size: 15px;
-  font-weight: 700;
+  padding: 8% 0 8% 0;
+  font-size: 16px;
+  font-weight: 650;
   margin-top: 30px;
   cursor: pointer;
 }
@@ -82,7 +81,6 @@ button:hover {
   align-items: center;
   justify-content: space-evenly;
   position: relative;
-  padding-right: 30px;
 }
 .cardWorking li {
   display: flex;
@@ -90,15 +88,11 @@ button:hover {
   align-items: center;
 }
 .cardWorking li:nth-child(1) {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   background: #9356DC;
   color: white;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   font-weight: 400;
   font-size: 15px;
   position: absolute;
@@ -110,8 +104,7 @@ button:hover {
 }
 .cardWorking i {
   color: grey;
-  font-size: 25px;
-  padding-left: 10px;
+  font-size: 18px;
 }
 
 .cardWorking:hover {

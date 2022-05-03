@@ -8,8 +8,6 @@
 }
 
 .container {
-  min-width: 370px;
-  max-width: 1444px;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -546,7 +544,7 @@ button:hover {
   opacity: 0;
 }
 
-.heartSolid:active {
+.heartSolid:hover {
   opacity: 1;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
@@ -584,7 +582,7 @@ button:hover {
   border: 2px solid #99E2D0;
   animation-name: menuCardHoverTransform;
   animation-duration: 0.2s;
-  padding: 4.9% 0 4.8% 0;
+  padding: 5.2% 0 5.3% 0;
   cursor: pointer;
 }
 .menuCard:hover .menuCardHover i {
@@ -677,12 +675,6 @@ button:hover {
   font-size: 0px;
 }
 
-/*.loader {
-    background: linear-gradient(to top left, $purple, $pink);
-    z-index: 1000000000;
-    height: 100vh;
-    width: 100%;
-}*/
 header {
   display: flex;
   justify-content: space-between;

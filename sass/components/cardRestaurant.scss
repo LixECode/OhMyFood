@@ -80,7 +80,7 @@
     opacity: 0;
     }
 
-.heartSolid:active {
+.heartSolid:hover {
         opacity: 1;
         background: linear-gradient($purple, $pink);
         -webkit-background-clip: text;

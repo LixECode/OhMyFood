@@ -11,14 +11,14 @@ header {
     }
 
     li:nth-of-type(1) {
-        width: 35%;
-        padding-left: 40px;
+        width: 30%;
+        padding-left: 30px;
     }
 
     li:nth-of-type(2) {
-        width: 65%;
+        width: 70%;
         font-family: 'Shrikhand', cursive;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     i {
@@ -37,12 +37,5 @@ header {
 }
 
 
-
-}
-
-@media (max-width:992px) {
-    header {
-        width:100%;
-    }
 
 }

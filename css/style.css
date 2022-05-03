@@ -7,11 +7,6 @@
   padding: 0;
 }
 
-.container {
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
 a:focus {
   color: black;
 }
@@ -393,6 +388,105 @@ footer li:nth-of-type(1) {
   padding-bottom: 10px;
 }
 
+.loading {
+  align-items: center;
+  animation: loadingOut 60s;
+  -webkit-animation: loadingOut 60s;
+  display: flex;
+  justify-content: center;
+}
+.loading p {
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 20%;
+}
+
+.boxLoading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.boxLoadinglabel {
+  top: 50%;
+  position: absolute;
+  width: 380px;
+  color: #FFF;
+  text-align: center;
+}
+
+.boxLoadinglabel label {
+  font-size: 20px;
+  opacity: 0;
+  display: inline-block;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+}
+.boxLoadinglabellabel:nth-child(6) {
+  -webkit-animation: loading 3s infinite ease-in-out;
+  animation: loading 3s infinite ease-in-out;
+}
+
+.boxLoadinglabel label:nth-child(5) {
+  -webkit-animation: loading 3s 100ms infinite ease-in-out;
+  animation: loading 3s 100ms infinite ease-in-out;
+}
+
+.boxLoadinglabel label:nth-child(4) {
+  -webkit-animation: loading 3s 200ms infinite ease-in-out;
+  animation: loading 3s 200ms infinite ease-in-out;
+}
+
+.boxLoadinglabel label:nth-child(3) {
+  -webkit-animation: loading 3s 300ms infinite ease-in-out;
+  animation: loading 3s 300ms infinite ease-in-out;
+}
+
+.boxLoadinglabel label:nth-child(2) {
+  -webkit-animation: loading 3s 400ms infinite ease-in-out;
+  animation: loading 3s 400ms infinite ease-in-out;
+}
+
+.boxLoadinglabel label:nth-child(1) {
+  -webkit-animation: loading 3s 500ms infinite ease-in-out;
+  animation: loading 3s 500ms infinite ease-in-out;
+}
+
+/* diparition du loader */
+@keyframes loadingOut {
+  0% {
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#9356DC, #FF79DA);
+  }
+  100% {
+    z-index: -100;
+    position: absolute;
+  }
+}
 .sectionGlobal,
 .sectionWorking {
   margin-bottom: 10%;

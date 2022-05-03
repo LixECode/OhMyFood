@@ -7,9 +7,9 @@
     position: relative;
 
     h1 {
-        font-size: 30px;
+        font-size: 25px;
         font-family: 'Shrikhand', cursive;
-        letter-spacing: 1px;
+        font-weight: 550;
     }
 }
 
@@ -20,7 +20,7 @@
     flex-direction: row;
     align-items: center;
     position: absolute;
-    top: -70px;
+    top: -60px;
     background-color: $background;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -35,9 +35,10 @@
 .sectionMenu {
     width: 100%;
     margin-bottom: 3%;
+    margin-top: 3%;
 
     h2 {
-        width: 60px;
+        width: 40px;
         font-size: 18px;
         border-bottom: 4px solid $green;
         padding: 2% 0 1% 0;

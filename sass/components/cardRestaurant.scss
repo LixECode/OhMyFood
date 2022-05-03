@@ -23,7 +23,7 @@
             position: absolute;
             top: 15px;
             right: 15px;
-            background-color:darken($color:$green,$amount:10);
+            background-color:darken($color:$green,$amount:3);
             color:darken($color:$green,$amount:40);
             font-weight: 600;
             width: 27%;
@@ -40,7 +40,7 @@
 
 .cardRestaurant img {
     object-fit: cover;
-    height: 160px;
+    height: 180px;
     width: 100%;
     border-top-right-radius: 18px;
     border-top-left-radius: 18px;

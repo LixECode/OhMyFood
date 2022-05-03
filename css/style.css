@@ -145,7 +145,7 @@ button:hover {
   position: absolute;
   top: 15px;
   right: 15px;
-  background-color: #71d7be;
+  background-color: #8ddfcb;
   color: #278870;
   font-weight: 600;
   width: 27%;
@@ -161,7 +161,7 @@ button:hover {
 
 .cardRestaurant img {
   object-fit: cover;
-  height: 160px;
+  height: 180px;
   width: 100%;
   border-top-right-radius: 18px;
   border-top-left-radius: 18px;
@@ -435,7 +435,7 @@ footer i {
 }
 
 .sectionWorking {
-  padding: 1% 1% 1% 4%;
+  padding: 1% 1% 8% 4%;
 }
 
 .boxCardWorking {
@@ -447,7 +447,7 @@ footer i {
 }
 
 .sectionRestaurant {
-  background-color: #ebebeb;
+  background-color: whitesmoke;
   padding-bottom: 10%;
 }
 

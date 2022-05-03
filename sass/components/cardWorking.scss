@@ -16,7 +16,7 @@
     ul{
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         position : relative;
     }
 
@@ -33,7 +33,11 @@
         font-weight: 400;
         font-size: 15px;
         position: absolute;
-        left: -20px;
+        left: -15px;
+}
+
+li:nth-child(2) {
+    margin: 0 6% 0 10%;
 }
 
     li:nth-child(3) {
@@ -42,9 +46,9 @@
     }
 
     i {
-        color: grey;
+        color: lighten($color: $black, $amount: 50);
         font-size: 18px;
-    }
+        }
 
 }
 

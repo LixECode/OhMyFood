@@ -79,7 +79,7 @@ button:hover {
 .cardWorking ul {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   position: relative;
 }
 .cardWorking li {
@@ -96,14 +96,17 @@ button:hover {
   font-weight: 400;
   font-size: 15px;
   position: absolute;
-  left: -20px;
+  left: -15px;
+}
+.cardWorking li:nth-child(2) {
+  margin: 0 6% 0 10%;
 }
 .cardWorking li:nth-child(3) {
   display: flex;
   justify-self: start;
 }
 .cardWorking i {
-  color: grey;
+  color: gray;
   font-size: 18px;
 }
 

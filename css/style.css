@@ -356,9 +356,8 @@ header li:nth-of-type(1) {
 }
 header li:nth-of-type(2) {
   width: 65%;
-}
-header li:nth-of-type(2) img {
-  width: 50%;
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
 }
 header i {
   font-size: 20px;

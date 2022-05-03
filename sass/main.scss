@@ -1,8 +1,7 @@
-@import "utils/variables";
-@import "utils/mixins";
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
 
-@import "base/base";
-@import "base/typography";
+@import "base/base.scss";
 
 @import "components/button.scss";
 @import "components/cardWorking.scss";

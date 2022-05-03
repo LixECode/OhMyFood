@@ -10,14 +10,14 @@
     text-align: center;
     width: 100%;
     background-color: lighten($color:$black,$amount:96);
-    padding-bottom: 30px;
 
     h1, h2 {
-        padding: 0 6% 0 6%;
+        padding: 0 10% 0 10%;
     }
 
     h1 {
         font-size: 25px;
+        padding-top: 6%;
     }
 }
 
@@ -31,7 +31,7 @@
     ul {
         @include flex;
         flex-direction: row;
-        padding: 3% 0 3% 0;
+        padding: 4% 0 4% 0;
 
         li {
             font-weight: 500;

@@ -21,7 +21,7 @@ a:visited {
 }
 
 h2 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -41,21 +41,21 @@ h5 {
 }
 
 button {
-  width: 50%;
+  width: 200px;
   background-color: #9356DC;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  padding: 4% 2% 4% 2%;
+  padding: 4% 0 4% 0;
   border-style: none;
   background: linear-gradient(to top left, #9356DC, #FF79DA);
   color: white;
   font-size: 15px;
   box-shadow: 5px 5px 15px #c2c1c1;
   cursor: pointer;
-  margin: 30px 0 30px 0;
+  margin: 8% 0 15% 0 !important;
 }
 button:hover {
   opacity: 80%;
@@ -408,13 +408,13 @@ footer i {
   text-align: center;
   width: 100%;
   background-color: whitesmoke;
-  padding-bottom: 30px;
 }
 .sectionGlobal h1, .sectionGlobal h2 {
-  padding: 0 6% 0 6%;
+  padding: 0 10% 0 10%;
 }
 .sectionGlobal h1 {
   font-size: 25px;
+  padding-top: 6%;
 }
 
 .boxGlobal {
@@ -429,7 +429,7 @@ footer i {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  padding: 3% 0 3% 0;
+  padding: 4% 0 4% 0;
 }
 .boxLocationGlobal ul li {
   font-weight: 500;

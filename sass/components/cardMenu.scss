@@ -99,54 +99,26 @@ to {
         
 
 
-.entryCard1 {
-    animation-name: menuCard;
-    animation-duration: 2s;
-    animation-delay: 0.1s;
+.cardMenu article:nth-of-type(1) {
+    animation: menuCard 0.8s ease-in 0.1s;
+    -webkit-animation: menuCard 0.8s ease-in 0.1s;
 }
 
-.entryCard2 {
-    animation-name: menuCard;
-    animation-duration: 2s;
-    animation-delay: 0.2s;
+.cardMenu article:nth-of-type(2) {
+    animation: menuCard 0.8s ease-in 0.12s;
+    -webkit-animation: menuCard 0.8s ease-in 0.12s;
 }
 
-.entryCard3 {
-    animation-name: menuCard;
-    animation-duration: 2s;
-    animation-delay: 0.3s;
+.cardMenu article:nth-of-type(3) {
+    animation: menuCard 0.8s ease-in 0.15s;
+    -webkit-animation: menuCard 0.8s ease-in 0.15s;
 }
 
-.entryCard4 {
-    animation-name: menuCard;
-    animation-duration: 2s;
-    animation-delay: 0.4s;
-
+.cardMenu article:nth-of-type(4) {
+    animation: menuCard 0.8s ease-in 0.2s;
+    -webkit-animation: menuCard 0.8s ease-in 0.2s;
 }
 
-.mainCard1 {
-animation-name: menuCard;
-animation-duration: 2s;
-animation-delay: 1s;
-}
-
-.mainCard2 {
-    animation-name: menuCard;
-    animation-duration: 2s;
-    animation-delay: 1.1s;
-    }
-
-.mainCard3 {
-    animation-name: menuCard;
-    animation-duration: 2s;
-    animation-delay: 1.2s;
-    }
-
-.mainCard4 {
-    animation-name: menuCard;
-    animation-duration: 2s;
-    animation-delay: 1.3s;
-    }
 
 @keyframes menuCard {
     from {

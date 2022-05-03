@@ -1,15 +1,12 @@
-@import "utils/variables";
-@import "utils/mixins";
+@import "utils/variables.scss";
+@import "utils/mixins.scss";
 
-@import "base/base";
-@import "base/typography";
-@import "base/normalize";
+@import "base/base.scss";
 
 @import "components/button.scss";
 @import "components/cardWorking.scss";
 @import "components/cardRestaurant.scss";
 @import "components/cardMenu.scss";
-@import "components/loading.scss";
 
 @import "layout/header.scss";
 @import "layout/footer.scss";

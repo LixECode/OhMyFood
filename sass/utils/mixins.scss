@@ -17,5 +17,5 @@
 }
 
 @mixin shadow {
-    box-shadow: 5px 5px 15px lighten($color:$black,$amount:78);
+    box-shadow: 5px 5px 15px lighten($color:$black, $amount:78);
 }

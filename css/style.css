@@ -1,0 +1,559 @@
+/*GLOBAL*/
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 0 2% 0 2%;
+}
+
+a:focus {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+/*TYPOGRAPHIES*/
+h2 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+button {
+  width: 200px;
+  background-color: #9356DC;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  padding: 4% 0 4% 0;
+  border-style: none;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  color: white;
+  box-shadow: 5px 5px 15px #c2c1c1;
+  cursor: pointer;
+  margin: 8% 0 15% 0 !important;
+}
+button:hover {
+  opacity: 80%;
+  box-shadow: 5px 5px 15px #8f8e8e;
+}
+
+.cardWorking {
+  box-shadow: 5px 5px 15px #c7c7c7;
+  background-color: whitesmoke;
+  width: 100%;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  padding: 8% 0 8% 0;
+  font-size: 16px;
+  font-weight: 650;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.cardWorking ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.cardWorking li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardWorking li:nth-child(1) {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: #9356DC;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  position: absolute;
+  left: -15px;
+}
+.cardWorking li:nth-child(2) {
+  margin: 0 6% 0 10%;
+}
+.cardWorking li:nth-child(3) {
+  display: flex;
+  justify-self: start;
+}
+.cardWorking i {
+  color: gray;
+  font-size: 18px;
+}
+
+.cardWorking:hover {
+  background-color: #f2eafb;
+}
+.cardWorking:hover i {
+  color: #9356DC;
+}
+
+.cardRestaurant {
+  box-shadow: 5px 5px 15px #c7c7c7;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  flex-direction: column;
+  margin-top: 20px;
+  min-width: 320px;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  color: black;
+  position: relative;
+}
+.cardRestaurant a:visited {
+  color: black;
+}
+.cardRestaurant .newCardRestaurant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #8ddfcb;
+  color: #278870;
+  font-weight: 600;
+  width: 27%;
+  padding: 2% 0 2% 0;
+  box-shadow: 5px 5px 15px #c7c7c7;
+  box-shadow: #8f8e8e;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.cardRestaurant img {
+  object-fit: cover;
+  height: 180px;
+  width: 100%;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+}
+
+.titleCardRestaurant {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 6% 3% 4%;
+  line-height: 25px;
+}
+
+.heartCard {
+  position: relative;
+  cursor: pointer;
+}
+
+.fa-heart {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  font-size: 25px;
+}
+
+.heartSolid {
+  color: transparent;
+  opacity: 0;
+  transition: all 1500ms ease;
+  -webkit-transition: all 1500ms ease;
+  -moz-transition: all 1500ms ease;
+  -ms-transition: all 1500ms ease;
+  -o-transition: all 1500ms ease;
+}
+
+.heartRegular:hover {
+  color: transparent;
+  opacity: 0;
+}
+
+.heartSolid:hover {
+  opacity: 1;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*CARD_BOX*/
+.menuCard {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: white;
+  width: 100%;
+  height: 70px;
+  margin-bottom: 20px;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  font-weight: 700;
+  box-shadow: 5px 5px 15px #c2c1c1;
+  /*CARD_ANIMATION*/
+}
+.menuCard .menuTitle {
+  width: 75%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-left: 3%;
+}
+.menuCard .menuPrice {
+  display: flex;
+  align-items: flex-end;
+  width: 20px;
+  height: 70px;
+  font-size: 15px;
+  padding-bottom: 3%;
+}
+.menuCard .menuCardHover {
+  width: 0px;
+  height: 0px;
+  font-size: 0px;
+}
+.menuCard:hover .menuCardHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  width: 15%;
+  height: 100%;
+  font-size: 25px;
+  color: white;
+  background-color: #99E2D0;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border: 2px solid #99E2D0;
+  animation-name: slidein;
+  animation-duration: 0.2s;
+  cursor: pointer;
+}
+.menuCard:hover .menuCardHover i {
+  animation-name: iRotation;
+  animation-duration: 0.5s;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+  }
+}
+@keyframes iRotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.cardMenu article:nth-of-type(1) {
+  animation: menuCard 0.8s ease-in 0.1s;
+  -webkit-animation: menuCard 0.8s ease-in 0.1s;
+}
+
+.cardMenu article:nth-of-type(2) {
+  animation: menuCard 0.8s ease-in 0.12s;
+  -webkit-animation: menuCard 0.8s ease-in 0.12s;
+}
+
+.cardMenu article:nth-of-type(3) {
+  animation: menuCard 0.8s ease-in 0.15s;
+  -webkit-animation: menuCard 0.8s ease-in 0.15s;
+}
+
+.cardMenu article:nth-of-type(4) {
+  animation: menuCard 0.8s ease-in 0.2s;
+  -webkit-animation: menuCard 0.8s ease-in 0.2s;
+}
+
+@keyframes menuCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    -moz-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    -o-transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 15px;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+header li:nth-of-type(1) {
+  width: 30%;
+  padding-left: 30px;
+}
+header li:nth-of-type(2) {
+  width: 70%;
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+}
+header i {
+  font-size: 20px;
+}
+header div img {
+  object-fit: cover;
+  width: 100%;
+  height: 270px;
+}
+header .indexArrow {
+  display: none;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 8% 0 8% 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  line-height: 25px;
+  font-weight: 400;
+}
+footer img {
+  height: 20px;
+  margin-bottom: 15px;
+  filter: invert(1);
+}
+footer a {
+  color: white;
+}
+footer i {
+  padding-right: 15px;
+  font-size: 12px;
+}
+footer li:nth-of-type(1) {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+/*LOADER*/
+.loading {
+  align-items: center;
+  animation: loadingOut 60s;
+  -webkit-animation: loadingOut 60s;
+  display: flex;
+  justify-content: center;
+}
+.loading p {
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+  margin-bottom: 20%;
+}
+
+/* diparition du loader */
+@keyframes loadingOut {
+  0% {
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#9356DC, #FF79DA);
+  }
+  100% {
+    z-index: -100;
+    position: absolute;
+  }
+}
+/*SECTION_INFORMATIONS*/
+.sectionGlobal,
+.sectionWorking {
+  margin-bottom: 10%;
+}
+
+.sectionGlobal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  white-space: normal;
+  text-align: center;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.sectionGlobal h1,
+.sectionGlobal h2 {
+  padding: 0 10% 0 10%;
+}
+.sectionGlobal h1 {
+  font-size: 25px;
+  padding-top: 6%;
+}
+
+.boxGlobal {
+  width: 100%;
+}
+
+.boxLocationGlobal {
+  background-color: #ebebeb;
+}
+.boxLocationGlobal ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 4% 0 4% 0;
+}
+.boxLocationGlobal ul li {
+  font-weight: 500;
+}
+.boxLocationGlobal ul i {
+  padding-right: 15px;
+}
+
+/*SECTION_FONCTIONNEMENT*/
+.sectionWorking {
+  padding: 1% 1% 8% 4%;
+}
+
+.boxCardWorking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 4% 0 4%;
+}
+
+/*component card in components/cardWorking*/
+/*SECTION_RESTAURANT*/
+.sectionRestaurant {
+  background-color: whitesmoke;
+  padding-bottom: 10%;
+}
+
+.boxRestaurant {
+  padding: 15% 5% 5% 5%;
+}
+
+.boxCardRestaurant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*component card in components/cardRestaurant*/
+/*GLOBAL*/
+.mainMenu {
+  background-color: #f6f6f6;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4%;
+  position: relative;
+}
+.mainMenu h1 {
+  font-size: 25px;
+  font-family: "Shrikhand", cursive;
+  font-weight: 550;
+}
+
+.titleMenu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: -60px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 3% 5% 0 5%;
+}
+.titleMenu .heartCard {
+  right: 20px;
+  top: -18px;
+}
+
+/*SECTION_MENU*/
+.sectionMenu {
+  width: 100%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+.sectionMenu h2 {
+  width: 40px;
+  font-size: 18px;
+  border-bottom: 4px solid #99E2D0;
+  padding: 2% 0 1% 0;
+  margin-left: 2%;
+}
+.sectionMenu .cardMenu {
+  margin-top: 5%;
+}
+
+/*# sourceMappingURL=style.css.map */

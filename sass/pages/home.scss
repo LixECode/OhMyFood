@@ -1,71 +1,112 @@
+/*LOADER*/
+
+.loading {
+  align-items: center;
+  animation: loadingOut 60s;
+  -webkit-animation: loadingOut 60s;
+  display: flex;
+  justify-content: center;
+
+  p {
+    font-family: 'Shrikhand', cursive;
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20%;
+  }
+}
+
+/* diparition du loader */
+@keyframes loadingOut {
+  0% {
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient($purple, $pink);
+  }
+
+  100% {
+    z-index: -100;
+    position: absolute;
+  }
+}
+
+/*SECTION_INFORMATIONS*/
+
 .sectionGlobal,
 .sectionWorking {
-    margin-bottom: 10%;
+  margin-bottom: 10%;
 }
 
 .sectionGlobal {
-    
-    @include flexCenterColumn;
-    white-space: normal;
-    text-align: center;
-    width: 100%;
-    background-color: lighten($color:$black,$amount:96);
-    padding-bottom: 30px;
 
-    h1, h2 {
-        padding: 0 6% 0 6%;
-    }
+  @include flexCenterColumn;
+  white-space: normal;
+  text-align: center;
+  width: 100%;
+  background-color: lighten($color:$black, $amount:96);
 
-    h1 {
-        font-size: 25px;
-    }
+  h1,
+  h2 {
+    padding: 0 10% 0 10%;
+  }
+
+  h1 {
+    font-size: 25px;
+    padding-top: 6%;
+  }
 }
 
 .boxGlobal {
-    width: 100%;
+  width: 100%;
 }
 
 .boxLocationGlobal {
-    background-color: lighten($color:$black,$amount:92);
+  background-color: lighten($color:$black, $amount:92);
 
-    ul {
-        @include flex;
-        flex-direction: row;
-        padding: 3% 0 3% 0;
+  ul {
+    @include flex;
+    flex-direction: row;
+    padding: 4% 0 4% 0;
 
-        li {
-            font-weight: 500;
-        }
-
-        i {
-            padding-right: 15px;
-        }
+    li {
+      font-weight: 500;
     }
+
+    i {
+      padding-right: 15px;
+    }
+  }
 }
 
+/*SECTION_FONCTIONNEMENT*/
+
 .sectionWorking {
-    padding: 1% 1% 1% 4%;
+  padding: 1% 1% 8% 4%;
 }
 
 .boxCardWorking {
-    @include flexCenterColumn;
-padding: 0 4% 0 4%;
+  @include flexCenterColumn;
+  padding: 0 4% 0 4%;
 }
 
+/*component card in components/cardWorking*/
+
+
+/*SECTION_RESTAURANT*/
 
 .sectionRestaurant {
-    background-color: lighten($color:$black,$amount:92);
-    padding-bottom: 10%;
+  background-color: lighten($color:$black, $amount:96);
+  padding-bottom: 10%;
 }
 
 .boxRestaurant {
-    padding: 15% 5% 5% 5%;
+  padding: 15% 5% 5% 5%;
 }
 
 .boxCardRestaurant {
-    @include flexCenterColumn;
+  @include flexCenterColumn;
 }
 
-
-
-
+/*component card in components/cardRestaurant*/

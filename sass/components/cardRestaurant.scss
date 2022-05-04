@@ -85,3 +85,54 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+
+/*RESPONSIVE_TABLET*/
+@media screen and (min-width: 768px){
+    .newCardRestaurant {
+        width: 20%!important;
+    }
+
+    .cardRestaurant {
+
+        h4 {
+          font-size: 25px;
+        }
+        
+        h5 {
+          font-size: 18px;
+        }
+      }
+      
+      .titleCardRestaurant {
+          line-height: 30px;
+          padding: 2% 4% 2% 2%;
+      }
+}
+
+  /*RESPONSIVE_DESKTOP*/
+
+  @media screen and (min-width: 992px){
+
+  .newCardRestaurant {
+    width: 10%!important;
+    height: 20px;
+  }
+
+  .titleCardRestaurant {
+    line-height: 35px;
+    padding: 2% 4% 2% 4%;
+}
+
+.cardRestaurant {
+    width: 48%;
+
+    img {
+        height: 280px;
+    }
+
+    .fa-heart {
+        font-size: 30px;
+    }
+}
+}

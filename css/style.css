@@ -129,14 +129,13 @@ button:hover {
   color: #9356DC;
 }
 
-/*RESPONSIVE_TABLET*/
 /*RESPONSIVE_DESKTOP*/
 @media screen and (min-width: 992px) {
   .cardWorking {
     width: 100%;
     height: 100%;
     padding: 2% 0 2% 0;
-    margin-right: 4%;
+    margin-right: 3%;
   }
   .cardWorking ul {
     display: flex;
@@ -145,7 +144,9 @@ button:hover {
     padding-right: 8%;
   }
   .cardWorking ul i {
-    font-size: 20px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .cardWorking ul li:nth-child(1) {
     height: 35px;
@@ -242,6 +243,46 @@ button:hover {
   -webkit-text-fill-color: transparent;
 }
 
+/*RESPONSIVE_TABLET*/
+@media screen and (min-width: 768px) {
+  .newCardRestaurant {
+    width: 20% !important;
+  }
+
+  .cardRestaurant h4 {
+    font-size: 25px;
+  }
+  .cardRestaurant h5 {
+    font-size: 18px;
+  }
+
+  .titleCardRestaurant {
+    line-height: 30px;
+    padding: 2% 4% 2% 2%;
+  }
+}
+/*RESPONSIVE_DESKTOP*/
+@media screen and (min-width: 992px) {
+  .newCardRestaurant {
+    width: 10% !important;
+    height: 20px;
+  }
+
+  .titleCardRestaurant {
+    line-height: 35px;
+    padding: 2% 4% 2% 4%;
+  }
+
+  .cardRestaurant {
+    width: 48%;
+  }
+  .cardRestaurant img {
+    height: 280px;
+  }
+  .cardRestaurant .fa-heart {
+    font-size: 30px;
+  }
+}
 /*CARD_BOX*/
 .menuCard {
   display: flex;
@@ -584,6 +625,14 @@ footer li:nth-of-type(1) {
   .sectionWorking {
     padding: 1% 1% 4% 4%;
   }
+
+  .sectionRestaurant {
+    padding-bottom: 5%;
+  }
+
+  .boxRestaurant {
+    padding: 5%;
+  }
 }
 /*RESPONSIVE_DESKTOP*/
 @media screen and (min-width: 992px) {
@@ -612,6 +661,18 @@ footer li:nth-of-type(1) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .sectionRestaurant {
+    padding-bottom: 2%;
+  }
+
+  .boxCardRestaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2%;
   }
 }
 /*GLOBAL*/

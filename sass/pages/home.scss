@@ -127,6 +127,14 @@
   padding: 1% 1% 4% 4%;
 }
 
+.sectionRestaurant {
+  padding-bottom: 5%;
+}
+
+.boxRestaurant {
+  padding: 5%;
+}
+
 }
 
 
@@ -163,6 +171,19 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+    }
+
+    .sectionRestaurant {
+      padding-bottom: 2%;
+    }
+
+    .boxCardRestaurant {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2%;
+
     }
 
   }

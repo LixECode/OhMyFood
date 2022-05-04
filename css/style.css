@@ -408,6 +408,32 @@ button:hover {
     -webkit-transform: translateY(0px);
   }
 }
+/*RESPONSIVE_DESKTOP*/
+@media screen and (min-width: 992px) {
+  .cardMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3%;
+  }
+
+  .menuCard {
+    width: 500px;
+    margin-right: 4%;
+  }
+
+  .menuTitle {
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menuTitle h4 {
+    font-size: 20px;
+  }
+  .menuTitle h5 {
+    font-size: 15px;
+  }
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -725,6 +751,28 @@ footer li:nth-of-type(1) {
 }
 .sectionMenu .cardMenu {
   margin-top: 5%;
+}
+
+/*RESPONSIVE_DESKTOP*/
+@media screen and (min-width: 992px) {
+  .mainMenu {
+    padding: 1%;
+  }
+
+  .titleMenu h1 {
+    font-size: 35px;
+  }
+  .titleMenu .fa-heart {
+    font-size: 35px;
+  }
+
+  .sectionMenu {
+    margin-bottom: 0;
+  }
+  .sectionMenu h2 {
+    width: 98%;
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

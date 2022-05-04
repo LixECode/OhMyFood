@@ -29,3 +29,28 @@ footer {
         padding-bottom: 10px;
     }
 }
+
+/*RESPONSIVE_TABLET*/
+@media screen and (min-width: 768px){
+
+    footer {
+        padding: 4% 0 4% 6%;
+    }
+
+}
+
+
+/*RESPONSIVE_DESKTOP*/
+@media screen and (min-width: 992px){
+
+    footer {
+        padding: 3% 0 2% 0;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 15px;
+        }
+    }
+}

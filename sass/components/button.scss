@@ -1,12 +1,12 @@
 button {
     width: 200px;
+    height: 50px;
     background-color: $purple;
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    padding: 4% 0 4% 0;
     border-style: none;
     background: linear-gradient(to top left, $purple, $pink);
     color: white;
@@ -18,4 +18,28 @@ button {
         opacity: 80%;
         box-shadow: 5px 5px 15px darken($color:$shadow, $amount: 20);
     }
+}
+
+
+/*RESPONSIVE_TABLET*/
+@media screen and (min-width: 768px){
+
+button {
+    margin: 8% 0 8% 0 !important;
+
+}
+}
+
+
+/*RESPONSIVE_DESKTOP*/
+
+@media screen and (min-width: 992px){
+    button {
+        width: 270px;
+        height: 60px;
+        font-size: 20px!important;
+        margin: 4% 0 4% 0 !important;
+    
+    }
+
 }

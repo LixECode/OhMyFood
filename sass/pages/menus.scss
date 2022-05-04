@@ -53,3 +53,29 @@
         margin-top: 5%;
     }
 }
+
+  /*RESPONSIVE_DESKTOP*/
+
+  @media screen and (min-width: 992px){
+
+    .mainMenu {
+        padding: 1%;
+    }
+    .titleMenu {
+        h1 {
+            font-size: 35px;
+        }
+        .fa-heart {
+            font-size: 35px;
+        }
+    }
+
+    .sectionMenu {
+        margin-bottom: 0;
+
+        h2 {
+            width: 98%;
+            font-size: 25px;
+        }
+  }
+}

@@ -1,4 +1,4 @@
-/*LOADER*/
+/*LOADER
 
 .loading {
   align-items: center;
@@ -14,9 +14,8 @@
     font-weight: 400;
     margin-bottom: 20%;
   }
-}
+} 
 
-/* diparition du loader */
 @keyframes loadingOut {
   0% {
     position: absolute;
@@ -29,8 +28,7 @@
   100% {
     z-index: -100;
     position: absolute;
-  }
-}
+  }*/
 
 /*SECTION_INFORMATIONS*/
 
@@ -110,3 +108,82 @@
 }
 
 /*component card in components/cardRestaurant*/
+
+
+
+/*RESPONSIVE_TABLET*/
+@media screen and (min-width: 768px){
+
+  .sectionGlobal,
+.sectionWorking {
+  margin-bottom: 5%;
+}
+
+.boxLocationGlobal ul {
+  padding: 3% 0 3% 0;
+}
+
+.sectionWorking {
+  padding: 1% 1% 4% 4%;
+}
+
+.sectionRestaurant {
+  padding-bottom: 5%;
+}
+
+.boxRestaurant {
+  padding: 5%;
+}
+
+}
+
+
+
+  /*RESPONSIVE_DESKTOP*/
+
+  @media screen and (min-width: 992px){
+
+    .sectionGlobal,
+.sectionWorking {
+  margin-bottom: 2%;
+}
+
+    .sectionGlobal {
+      h1 {
+        font-size: 35px;
+        padding-top: 3%;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+    }
+
+    .boxLocationGlobal ul {
+      padding: 2% 0 2% 0;
+    }
+    
+    .sectionWorking {
+      padding: 0 0 2% 1%;
+    }
+
+    .boxCardWorking {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .sectionRestaurant {
+      padding-bottom: 2%;
+    }
+
+    .boxCardRestaurant {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2%;
+
+    }
+
+  }

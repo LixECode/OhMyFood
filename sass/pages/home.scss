@@ -114,6 +114,16 @@
 /*RESPONSIVE_TABLET*/
 @media screen and (min-width: 768px){
 
+  .sectionGlobal,
+.sectionWorking {
+  margin-bottom: 5%;
+}
+
+.boxLocationGlobal ul {
+  padding: 3% 0 3% 0;
+}
+
+
 
 }
 
@@ -122,6 +132,22 @@
   /*RESPONSIVE_DESKTOP*/
 
   @media screen and (min-width: 992px){
+
+    .sectionGlobal {
+      h1 {
+        font-size: 35px;
+        padding-top: 3%;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+    }
+
+    .boxLocationGlobal ul {
+      padding: 2% 0 2% 0;
+    }
+    
 
 
   }

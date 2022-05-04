@@ -19,3 +19,27 @@ button {
         box-shadow: 5px 5px 15px darken($color:$shadow, $amount: 20);
     }
 }
+
+
+/*RESPONSIVE_TABLET*/
+@media screen and (min-width: 768px){
+
+button {
+    margin: 8% 0 8% 0 !important;
+
+}
+}
+
+
+/*RESPONSIVE_DESKTOP*/
+
+@media screen and (min-width: 992px){
+    button {
+        width: 270px;
+        height: 60px;
+        font-size: 20px!important;
+        margin: 4% 0 4% 0 !important;
+    
+    }
+
+}

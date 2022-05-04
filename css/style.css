@@ -61,6 +61,21 @@ button:hover {
   box-shadow: 5px 5px 15px #8f8e8e;
 }
 
+/*RESPONSIVE_TABLET*/
+@media screen and (min-width: 768px) {
+  button {
+    margin: 8% 0 8% 0 !important;
+  }
+}
+/*RESPONSIVE_DESKTOP*/
+@media screen and (min-width: 992px) {
+  button {
+    width: 270px;
+    height: 60px;
+    font-size: 20px !important;
+    margin: 4% 0 4% 0 !important;
+  }
+}
 .cardWorking {
   box-shadow: 5px 5px 15px #c7c7c7;
   background-color: whitesmoke;
@@ -367,13 +382,14 @@ header .indexArrow {
 /*RESPONSIVE_TABLET*/
 @media screen and (min-width: 768px) {
   header li:nth-of-type(2) {
-    width: 56%;
+    width: 60%;
   }
 }
 /*RESPONSIVE_DESKTOP*/
 @media screen and (min-width: 992px) {
   header li:nth-of-type(2) {
-    width: 52%;
+    width: 54%;
+    font-size: 40px;
   }
 }
 footer {
@@ -532,7 +548,30 @@ footer li:nth-of-type(1) {
 
 /*component card in components/cardRestaurant*/
 /*RESPONSIVE_TABLET*/
+@media screen and (min-width: 768px) {
+  .sectionGlobal,
+.sectionWorking {
+    margin-bottom: 5%;
+  }
+
+  .boxLocationGlobal ul {
+    padding: 3% 0 3% 0;
+  }
+}
 /*RESPONSIVE_DESKTOP*/
+@media screen and (min-width: 992px) {
+  .sectionGlobal h1 {
+    font-size: 35px;
+    padding-top: 3%;
+  }
+  .sectionGlobal h2 {
+    font-size: 25px;
+  }
+
+  .boxLocationGlobal ul {
+    padding: 2% 0 2% 0;
+  }
+}
 /*GLOBAL*/
 .mainMenu {
   background-color: #f6f6f6;

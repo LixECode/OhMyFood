@@ -65,16 +65,17 @@ button:hover {
   box-shadow: 5px 5px 15px #c7c7c7;
   background-color: whitesmoke;
   width: 100%;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-  padding: 8% 0 8% 0;
+  height: 70px;
   font-size: 16px;
   font-weight: 650;
+  padding-top: 25px;
   margin-top: 30px;
   cursor: pointer;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
 }
 .cardWorking ul {
   display: flex;
@@ -100,10 +101,6 @@ button:hover {
 }
 .cardWorking li:nth-child(2) {
   margin: 0 6% 0 10%;
-}
-.cardWorking li:nth-child(3) {
-  display: flex;
-  justify-self: start;
 }
 .cardWorking i {
   color: gray;
@@ -351,7 +348,7 @@ header li:nth-of-type(1) {
   padding-left: 30px;
 }
 header li:nth-of-type(2) {
-  width: 550px;
+  width: 450px;
   font-family: "Shrikhand", cursive;
   font-size: 30px;
 }
@@ -367,6 +364,18 @@ header .indexArrow {
   display: none;
 }
 
+/*RESPONSIVE_TABLET*/
+@media screen and (min-width: 768px) {
+  header li:nth-of-type(2) {
+    width: 56%;
+  }
+}
+/*RESPONSIVE_DESKTOP*/
+@media screen and (min-width: 992px) {
+  header li:nth-of-type(2) {
+    width: 52%;
+  }
+}
 footer {
   background-color: #353535;
   color: white;
@@ -395,36 +404,37 @@ footer li:nth-of-type(1) {
   padding-bottom: 10px;
 }
 
-/*LOADER*/
+/*LOADER
+
 .loading {
   align-items: center;
   animation: loadingOut 60s;
   -webkit-animation: loadingOut 60s;
   display: flex;
   justify-content: center;
-}
-.loading p {
-  font-family: "Shrikhand", cursive;
-  font-size: 25px;
-  color: white;
-  font-weight: 400;
-  margin-bottom: 20%;
-}
 
-/* diparition du loader */
+  p {
+    font-family: 'Shrikhand', cursive;
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20%;
+  }
+} 
+
 @keyframes loadingOut {
   0% {
     position: absolute;
     z-index: 100;
     height: 100%;
     width: 100%;
-    background: linear-gradient(#9356DC, #FF79DA);
+    background: linear-gradient($purple, $pink);
   }
+
   100% {
     z-index: -100;
     position: absolute;
-  }
-}
+  }*/
 /*SECTION_INFORMATIONS*/
 .sectionGlobal,
 .sectionWorking {
@@ -503,6 +513,8 @@ footer li:nth-of-type(1) {
 }
 
 /*component card in components/cardRestaurant*/
+/*RESPONSIVE_TABLET*/
+/*RESPONSIVE_DESKTOP*/
 /*GLOBAL*/
 .mainMenu {
   background-color: #f6f6f6;

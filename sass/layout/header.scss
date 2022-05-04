@@ -16,7 +16,7 @@ header {
     }
 
     li:nth-of-type(2) {
-        width: 550px;
+        width: 450px;
         font-family: 'Shrikhand', cursive;
         font-size: 30px;
     }
@@ -37,5 +37,31 @@ header {
     }
 
 
+
+}
+
+
+/*RESPONSIVE_TABLET*/
+@media screen and (min-width: 768px){
+
+    header {
+
+ li:nth-of-type(2) {
+    width: 56%;
+    }
+}
+
+}
+
+
+/*RESPONSIVE_DESKTOP*/
+@media screen and (min-width: 992px){
+
+    header {
+
+ li:nth-of-type(2) {
+    width: 52%;
+    }
+}
 
 }

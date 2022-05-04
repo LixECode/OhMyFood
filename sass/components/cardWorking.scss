@@ -1,19 +1,20 @@
 .cardWorking {
     @include shadow;
-    background-color: lighten($color:$black, $amount:96);
+    background-color:lighten($color:$black,$amount:96);
     width: 100%;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-    padding: 8% 0 8% 0;
+    height: 70px;
     font-size: 16px;
     font-weight: 650;
+    padding-top: 25px;
     margin-top: 30px;
     cursor: pointer;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
 
-    ul {
+    ul{
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -38,11 +39,6 @@
 
     li:nth-child(2) {
         margin: 0 6% 0 10%;
-    }
-
-    li:nth-child(3) {
-        display: flex;
-        justify-self: start;
     }
 
     i {

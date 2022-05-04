@@ -1,4 +1,4 @@
-/*LOADER*/
+/*LOADER
 
 .loading {
   align-items: center;
@@ -14,9 +14,8 @@
     font-weight: 400;
     margin-bottom: 20%;
   }
-}
+} 
 
-/* diparition du loader */
 @keyframes loadingOut {
   0% {
     position: absolute;
@@ -29,8 +28,7 @@
   100% {
     z-index: -100;
     position: absolute;
-  }
-}
+  }*/
 
 /*SECTION_INFORMATIONS*/
 
@@ -110,3 +108,20 @@
 }
 
 /*component card in components/cardRestaurant*/
+
+
+
+/*RESPONSIVE_TABLET*/
+@media screen and (min-width: 768px){
+
+
+}
+
+
+
+  /*RESPONSIVE_DESKTOP*/
+
+  @media screen and (min-width: 992px){
+
+
+  }

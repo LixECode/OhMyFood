@@ -161,17 +161,16 @@ button:hover {
 
 .cardRestaurant img {
   object-fit: cover;
-  height: 180px;
   width: 100%;
-  border-top-right-radius: 18px;
-  border-top-left-radius: 18px;
+  height: 160px;
+  border-radius: 20px 20px 0 0;
 }
 
 .titleCardRestaurant {
   display: flex;
   justify-content: space-between;
   padding: 3% 6% 3% 4%;
-  line-height: 25px;
+  line-height: 20px;
 }
 
 .heartCard {
@@ -348,11 +347,11 @@ header ul {
   padding-bottom: 10px;
 }
 header li:nth-of-type(1) {
-  width: 30%;
+  width: 40%;
   padding-left: 30px;
 }
 header li:nth-of-type(2) {
-  width: 70%;
+  width: 550px;
   font-family: "Shrikhand", cursive;
   font-size: 30px;
 }

@@ -41,17 +41,15 @@
 
 .cardRestaurant img {
     object-fit: cover;
-    height: 180px;
     width: 100%;
-    border-top-right-radius: 18px;
-    border-top-left-radius: 18px;
-
+    height: 160px;
+    border-radius: 20px 20px 0 0;
 }
 
 .titleCardRestaurant {
     @include space-between;
     padding: 3% 6% 3% 4%;
-    line-height: 25px;
+    line-height: 20px;
 }
 
 .heartCard {

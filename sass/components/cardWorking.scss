@@ -55,3 +55,37 @@
         color: $purple;
     }
 }
+
+/*RESPONSIVE_TABLET*/
+@media screen and (min-width: 768px){
+}
+
+
+
+  /*RESPONSIVE_DESKTOP*/
+
+  @media screen and (min-width: 992px){
+    .cardWorking {
+        width: 100%;
+        height: 100%;
+        padding: 2% 0 2% 0;
+        margin-right: 4%;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            padding-right: 8%;
+
+            i {
+                font-size: 20px;
+
+            }
+
+            li:nth-child(1) {
+                height: 35px;
+                width: 35px;
+            }
+        }
+    }
+  }

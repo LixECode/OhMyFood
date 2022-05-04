@@ -129,6 +129,29 @@ button:hover {
   color: #9356DC;
 }
 
+/*RESPONSIVE_TABLET*/
+/*RESPONSIVE_DESKTOP*/
+@media screen and (min-width: 992px) {
+  .cardWorking {
+    width: 100%;
+    height: 100%;
+    padding: 2% 0 2% 0;
+    margin-right: 4%;
+  }
+  .cardWorking ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    padding-right: 8%;
+  }
+  .cardWorking ul i {
+    font-size: 20px;
+  }
+  .cardWorking ul li:nth-child(1) {
+    height: 35px;
+    width: 35px;
+  }
+}
 .cardRestaurant {
   box-shadow: 5px 5px 15px #c7c7c7;
   display: flex;
@@ -557,9 +580,18 @@ footer li:nth-of-type(1) {
   .boxLocationGlobal ul {
     padding: 3% 0 3% 0;
   }
+
+  .sectionWorking {
+    padding: 1% 1% 4% 4%;
+  }
 }
 /*RESPONSIVE_DESKTOP*/
 @media screen and (min-width: 992px) {
+  .sectionGlobal,
+.sectionWorking {
+    margin-bottom: 2%;
+  }
+
   .sectionGlobal h1 {
     font-size: 35px;
     padding-top: 3%;
@@ -570,6 +602,16 @@ footer li:nth-of-type(1) {
 
   .boxLocationGlobal ul {
     padding: 2% 0 2% 0;
+  }
+
+  .sectionWorking {
+    padding: 0 0 2% 1%;
+  }
+
+  .boxCardWorking {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 /*GLOBAL*/

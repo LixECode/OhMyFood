@@ -123,7 +123,9 @@
   padding: 3% 0 3% 0;
 }
 
-
+.sectionWorking {
+  padding: 1% 1% 4% 4%;
+}
 
 }
 
@@ -132,6 +134,11 @@
   /*RESPONSIVE_DESKTOP*/
 
   @media screen and (min-width: 992px){
+
+    .sectionGlobal,
+.sectionWorking {
+  margin-bottom: 2%;
+}
 
     .sectionGlobal {
       h1 {
@@ -148,6 +155,14 @@
       padding: 2% 0 2% 0;
     }
     
+    .sectionWorking {
+      padding: 0 0 2% 1%;
+    }
 
+    .boxCardWorking {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
   }

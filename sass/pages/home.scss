@@ -1,37 +1,72 @@
-/*LOADER
+/*LOADER*/
+.loader {
+  @include flexCenterColumn;
+  position: fixed;
+  background: linear-gradient($purple, $pink);
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  animation: disappear 2s forwards .5s;
+  -webkit-animation: disappear 2s forwards .5s;
+}
 
-.loading {
-  align-items: center;
-  animation: loadingOut 60s;
-  -webkit-animation: loadingOut 60s;
-  display: flex;
-  justify-content: center;
+.loader p {
+  font-size: 25px;
+  font-family: 'Shrikhand', cursive;
+  font-weight: 550;
+  color: white;
+  padding-bottom: 4%;
+}
 
-  p {
-    font-family: 'Shrikhand', cursive;
-    font-size: 25px;
-    color: white;
-    font-weight: 400;
-    margin-bottom: 20%;
-  }
-} 
 
-@keyframes loadingOut {
+.boxLoading {
+  content: "";
+  height: 100px;
+  width: 100px;
+  border-top: 5px solid $purple;
+  border-bottom: 5px solid $pink;
+  border-right: 5px solid $green;
+  border-left: 5px solid white;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+  -webkit-animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
   0% {
-    position: absolute;
-    z-index: 100;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient($purple, $pink);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
   }
 
   100% {
-    z-index: -100;
-    position: absolute;
-  }*/
+    transform: rotate(0);
+  }
+}
+
+
+@keyframes disappear {
+  0% {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+
+  100% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+}
+}
+
 
 /*SECTION_INFORMATIONS*/
-
 .sectionGlobal,
 .sectionWorking {
   margin-bottom: 10%;
@@ -79,7 +114,6 @@
 }
 
 /*SECTION_FONCTIONNEMENT*/
-
 .sectionWorking {
   padding: 1% 1% 8% 4%;
 }
@@ -91,9 +125,7 @@
 
 /*component card in components/cardWorking*/
 
-
 /*SECTION_RESTAURANT*/
-
 .sectionRestaurant {
   background-color: lighten($color:$black, $amount:96);
   padding-bottom: 10%;
@@ -109,81 +141,80 @@
 
 /*component card in components/cardRestaurant*/
 
-
-
 /*RESPONSIVE_TABLET*/
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
   .sectionGlobal,
-.sectionWorking {
-  margin-bottom: 5%;
+  .sectionWorking {
+    margin-bottom: 5%;
+  }
+
+  .boxLocationGlobal ul {
+    padding: 3% 0 3% 0;
+  }
+
+  .sectionWorking {
+    padding: 1% 1% 4% 4%;
+  }
+
+  .sectionRestaurant {
+    padding-bottom: 5%;
+  }
+
+  .boxRestaurant {
+    padding: 5%;
+  }
+
 }
 
-.boxLocationGlobal ul {
-  padding: 3% 0 3% 0;
-}
+/*RESPONSIVE_DESKTOP*/
+@media screen and (min-width: 992px) {
 
-.sectionWorking {
-  padding: 1% 1% 4% 4%;
-}
+  .container {
+    padding: 0;
+  }
 
-.sectionRestaurant {
-  padding-bottom: 5%;
-}
+  .sectionGlobal,
+  .sectionWorking {
+    margin-bottom: 2%;
+  }
 
-.boxRestaurant {
-  padding: 5%;
-}
-
-}
-
-
-
-  /*RESPONSIVE_DESKTOP*/
-
-  @media screen and (min-width: 992px){
-
-    .sectionGlobal,
-.sectionWorking {
-  margin-bottom: 2%;
-}
-
-    .sectionGlobal {
-      h1 {
-        font-size: 35px;
-        padding-top: 3%;
-      }
-
-      h2 {
-        font-size: 25px;
-      }
+  .sectionGlobal {
+    h1 {
+      font-size: 35px;
+      padding-top: 3%;
     }
 
-    .boxLocationGlobal ul {
-      padding: 2% 0 2% 0;
+    h2 {
+      font-size: 25px;
     }
-    
-    .sectionWorking {
-      padding: 0 0 2% 1%;
-    }
+  }
 
-    .boxCardWorking {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
+  .boxLocationGlobal ul {
+    padding: 2% 0 2% 0;
+  }
 
-    .sectionRestaurant {
-      padding-bottom: 2%;
-    }
+  .sectionWorking {
+    padding: 0 0 2% 1%;
+  }
 
-    .boxCardRestaurant {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 2%;
+  .boxCardWorking {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    }
+  .sectionRestaurant {
+    padding-bottom: 2%;
+  }
+
+  .boxCardRestaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2%;
 
   }
+
+}

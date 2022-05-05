@@ -1,5 +1,4 @@
 /*GLOBAL*/
-
 .mainMenu {
     background-color: $background;
     width: 100%;
@@ -35,7 +34,6 @@
 }
 
 /*SECTION_MENU*/
-
 .sectionMenu {
     width: 100%;
     margin-bottom: 3%;
@@ -54,17 +52,20 @@
     }
 }
 
-  /*RESPONSIVE_DESKTOP*/
-
-  @media screen and (min-width: 992px){
+/*RESPONSIVE_DESKTOP*/
+@media screen and (min-width: 992px) {
 
     .mainMenu {
+        width: 100%;
         padding: 1%;
+        gap: 2%;
     }
+
     .titleMenu {
         h1 {
             font-size: 35px;
         }
+
         .fa-heart {
             font-size: 35px;
         }
@@ -72,10 +73,9 @@
 
     .sectionMenu {
         margin-bottom: 0;
-
         h2 {
             width: 98%;
             font-size: 25px;
         }
-  }
+    }
 }

@@ -27,8 +27,8 @@
         background-color: darken($color:$green, $amount:3);
         color: darken($color:$green, $amount:40);
         font-weight: 600;
-        width: 27%;
-        padding: 2% 0 2% 0;
+        width: 90px;
+        height: 35px;
         @include shadow;
         box-shadow: darken($color:$shadow, $amount:20);
         border-radius: 4px;
@@ -39,19 +39,25 @@
     }
 }
 
-.cardRestaurant img {
-    object-fit: cover;
-    width: 100%;
-    height: 160px;
-    border-radius: 20px 20px 0 0;
-}
-
 .titleCardRestaurant {
     @include space-between;
     padding: 3% 6% 3% 4%;
     line-height: 20px;
 }
 
+/*PICTURES*/
+.cardRestaurant img {
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+}
+
+/*HEART_ICON*/
 .heartCard {
     position: relative;
     cursor: pointer;
@@ -89,9 +95,6 @@
 
 /*RESPONSIVE_TABLET*/
 @media screen and (min-width: 768px){
-    .newCardRestaurant {
-        width: 20%!important;
-    }
 
     .cardRestaurant {
 
@@ -113,11 +116,6 @@
   /*RESPONSIVE_DESKTOP*/
 
   @media screen and (min-width: 992px){
-
-  .newCardRestaurant {
-    width: 10%!important;
-    height: 20px;
-  }
 
   .titleCardRestaurant {
     line-height: 35px;

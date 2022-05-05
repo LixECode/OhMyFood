@@ -27,8 +27,8 @@
         background-color: darken($color:$green, $amount:3);
         color: darken($color:$green, $amount:40);
         font-weight: 600;
-        width: 27%;
-        padding: 2% 0 2% 0;
+        width: 90px;
+        height: 35px;
         @include shadow;
         box-shadow: darken($color:$shadow, $amount:20);
         border-radius: 4px;
@@ -95,9 +95,6 @@
 
 /*RESPONSIVE_TABLET*/
 @media screen and (min-width: 768px){
-    .newCardRestaurant {
-        width: 20%!important;
-    }
 
     .cardRestaurant {
 
@@ -119,11 +116,6 @@
   /*RESPONSIVE_DESKTOP*/
 
   @media screen and (min-width: 992px){
-
-  .newCardRestaurant {
-    width: 10%!important;
-    height: 20px;
-  }
 
   .titleCardRestaurant {
     line-height: 35px;

@@ -184,8 +184,8 @@ button:hover {
   background-color: #8ddfcb;
   color: #278870;
   font-weight: 600;
-  width: 27%;
-  padding: 2% 0 2% 0;
+  width: 90px;
+  height: 35px;
   box-shadow: 5px 5px 15px #c7c7c7;
   box-shadow: #8f8e8e;
   border-radius: 4px;
@@ -251,10 +251,6 @@ button:hover {
 
 /*RESPONSIVE_TABLET*/
 @media screen and (min-width: 768px) {
-  .newCardRestaurant {
-    width: 20% !important;
-  }
-
   .cardRestaurant h4 {
     font-size: 25px;
   }
@@ -269,11 +265,6 @@ button:hover {
 }
 /*RESPONSIVE_DESKTOP*/
 @media screen and (min-width: 992px) {
-  .newCardRestaurant {
-    width: 10% !important;
-    height: 20px;
-  }
-
   .titleCardRestaurant {
     line-height: 35px;
     padding: 2% 4% 2% 4%;
@@ -316,8 +307,12 @@ button:hover {
   line-height: 25px;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
   padding-left: 3%;
+}
+.menuCard .menuTitle h4, .menuCard .menuTitle h5 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .menuCard .menuPrice {
   display: flex;
@@ -325,7 +320,7 @@ button:hover {
   width: 20px;
   height: 70px;
   font-size: 15px;
-  padding-bottom: 3%;
+  padding-bottom: 4.5%;
 }
 .menuCard .menuCardHover {
   width: 0px;
@@ -427,18 +422,6 @@ button:hover {
     width: 500px;
     margin-right: 4%;
   }
-
-  .menuTitle {
-    white-space: wrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .menuTitle h4 {
-    font-size: 20px;
-  }
-  .menuTitle h5 {
-    font-size: 15px;
-  }
 }
 header {
   display: flex;
@@ -455,7 +438,7 @@ header ul {
   padding-bottom: 10px;
 }
 header li:nth-of-type(1) {
-  width: 40%;
+  width: 42%;
   padding-left: 30px;
 }
 header li:nth-of-type(2) {
@@ -478,14 +461,19 @@ header .indexArrow {
 /*RESPONSIVE_TABLET*/
 @media screen and (min-width: 768px) {
   header li:nth-of-type(2) {
-    width: 60%;
+    width: 65%;
   }
 }
 /*RESPONSIVE_DESKTOP*/
 @media screen and (min-width: 992px) {
   header li:nth-of-type(2) {
-    width: 54%;
+    width: 65%;
     font-size: 40px;
+  }
+}
+@media screen and (min-width: 1444px) {
+  header li:nth-of-type(2) {
+    width: 58%;
   }
 }
 footer {
@@ -535,36 +523,65 @@ footer li:nth-of-type(1) {
   }
 }
 /*LOADER
+.loader {
+  @include flexCenterColumn;
+  position: fixed;
+  background: linear-gradient($purple, $pink);
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 1;
+  animation: disappear 10s forwards 3s;
+  -webkit-animation: disappear 10s forwards 3s;
+}
 
-.loading {
-  align-items: center;
-  animation: loadingOut 60s;
-  -webkit-animation: loadingOut 60s;
-  display: flex;
-  justify-content: center;
+.loader p {
+  font-size: 25px;
+  font-family: 'Shrikhand', cursive;
+  font-weight: 550;
+  color: white;
+  padding-bottom: 4%;
+}
 
-  p {
-    font-family: 'Shrikhand', cursive;
-    font-size: 25px;
-    color: white;
-    font-weight: 400;
-    margin-bottom: 20%;
-  }
-} 
 
-@keyframes loadingOut {
+.boxLoading {
+  content: "";
+  height: 100px;
+  width: 100px;
+  border-top: 5px solid $purple;
+  border-bottom: 5px solid $pink;
+  border-right: 5px solid $green;
+  border-left: 5px solid white;
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+  -webkit-animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
   0% {
-    position: absolute;
-    z-index: 100;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient($purple, $pink);
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
   }
 
   100% {
-    z-index: -100;
-    position: absolute;
-  }*/
+    transform: rotate(0);
+  }
+}
+
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+*/
 /*SECTION_INFORMATIONS*/
 .sectionGlobal,
 .sectionWorking {
@@ -668,6 +685,10 @@ footer li:nth-of-type(1) {
 }
 /*RESPONSIVE_DESKTOP*/
 @media screen and (min-width: 992px) {
+  .container {
+    padding: 0;
+  }
+
   .sectionGlobal,
 .sectionWorking {
     margin-bottom: 2%;

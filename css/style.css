@@ -195,13 +195,6 @@ button:hover {
   -o-border-radius: 4px;
 }
 
-.cardRestaurant img {
-  object-fit: cover;
-  width: 100%;
-  height: 160px;
-  border-radius: 20px 20px 0 0;
-}
-
 .titleCardRestaurant {
   display: flex;
   justify-content: space-between;
@@ -209,6 +202,19 @@ button:hover {
   line-height: 20px;
 }
 
+/*PICTURES*/
+.cardRestaurant img {
+  object-fit: cover;
+  width: 100%;
+  height: 160px;
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+
+/*HEART_ICON*/
 .heartCard {
   position: relative;
   cursor: pointer;

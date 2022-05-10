@@ -494,6 +494,9 @@ footer img {
 footer a {
   color: white;
 }
+footer a:visited {
+  color: white;
+}
 footer i {
   padding-right: 15px;
   font-size: 12px;

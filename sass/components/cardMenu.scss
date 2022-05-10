@@ -27,7 +27,8 @@
         overflow: hidden;
         padding-left: 3%;
 
-        h4, h5 {
+        h4,
+        h5 {
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
@@ -196,16 +197,16 @@
     0% {
         opacity: 0;
     }
-    
+
     100% {
         opacity: 1;
     }
 }
 
 
-  /*RESPONSIVE_DESKTOP*/
+/*RESPONSIVE_DESKTOP*/
 
-  @media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
     .cardMenu {
         display: flex;
         flex-direction: row;
@@ -218,4 +219,4 @@
         margin-right: 4%;
     }
 
-  }
+}

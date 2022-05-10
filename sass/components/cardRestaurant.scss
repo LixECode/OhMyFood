@@ -94,43 +94,43 @@
 
 
 /*RESPONSIVE_TABLET*/
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
     .cardRestaurant {
 
         h4 {
-          font-size: 25px;
+            font-size: 25px;
         }
-        
+
         h5 {
-          font-size: 18px;
+            font-size: 18px;
         }
-      }
-      
-      .titleCardRestaurant {
-          line-height: 30px;
-          padding: 2% 4% 2% 2%;
-      }
-}
-
-  /*RESPONSIVE_DESKTOP*/
-
-  @media screen and (min-width: 992px){
-
-  .titleCardRestaurant {
-    line-height: 35px;
-    padding: 2% 4% 2% 4%;
-}
-
-.cardRestaurant {
-    width: 48%;
-
-    img {
-        height: 280px;
     }
 
-    .fa-heart {
-        font-size: 30px;
+    .titleCardRestaurant {
+        line-height: 30px;
+        padding: 2% 4% 2% 2%;
     }
 }
+
+/*RESPONSIVE_DESKTOP*/
+
+@media screen and (min-width: 992px) {
+
+    .titleCardRestaurant {
+        line-height: 35px;
+        padding: 2% 4% 2% 4%;
+    }
+
+    .cardRestaurant {
+        width: 48%;
+
+        img {
+            height: 280px;
+        }
+
+        .fa-heart {
+            font-size: 30px;
+        }
+    }
 }

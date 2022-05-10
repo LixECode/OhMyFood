@@ -310,7 +310,8 @@ button:hover {
   overflow: hidden;
   padding-left: 3%;
 }
-.menuCard .menuTitle h4, .menuCard .menuTitle h5 {
+.menuCard .menuTitle h4,
+.menuCard .menuTitle h5 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;

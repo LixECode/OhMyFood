@@ -14,7 +14,7 @@
     -o-border-radius: 18px;
     font-weight: 700;
     box-shadow: 5px 5px 15px #c2c1c1;
-
+    opacity: 1;
 
     .menuTitle {
         width: 75%;
@@ -27,7 +27,8 @@
         overflow: hidden;
         padding-left: 3%;
 
-        h4, h5 {
+        h4,
+        h5 {
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
@@ -105,25 +106,56 @@
     }
 }
 
-.cardMenu article:nth-of-type(1) {
+.entryMenu1 {
     animation: menuCard 0.8s ease-in 0.1s;
     -webkit-animation: menuCard 0.8s ease-in 0.1s;
 }
 
-.cardMenu article:nth-of-type(2) {
+.entryMenu2 {
     animation: menuCard 0.8s ease-in 0.12s;
     -webkit-animation: menuCard 0.8s ease-in 0.12s;
 }
 
-.cardMenu article:nth-of-type(3) {
-    animation: menuCard 0.8s ease-in 0.15s;
-    -webkit-animation: menuCard 0.8s ease-in 0.15s;
+.entryMenu3 {
+    animation: menuCard 0.8s ease-in 0.14s;
+    -webkit-animation: menuCard 0.8s ease-in 0.14s;
 }
 
-.cardMenu article:nth-of-type(4) {
-    animation: menuCard 0.8s ease-in 0.2s;
-    -webkit-animation: menuCard 0.8s ease-in 0.2s;
+.entryMenu4 {
+    animation: menuCard 0.8s ease-in 0.16s;
+    -webkit-animation: menuCard 0.8s ease-in 0.16s;
 }
+
+.mainMenu1 {
+    animation: menuCard 1s ease-in 0.1s;
+    -webkit-animation: menuCard 1s ease-in 0.1s;
+}
+
+.mainMenu2 {
+    animation: menuCard 1s ease-in 0.12s;
+    -webkit-animation: menuCard 1s ease-in 0.12s;
+}
+
+.mainMenu3 {
+    animation: menuCard 1s ease-in 0.14s;
+    -webkit-animation: menuCard 1s ease-in 0.14s;
+}
+
+.dessertMenu1 {
+    animation: menuCard 1.5s ease-in 0.1s;
+    -webkit-animation: menuCard 1.5s ease-in 0.1s;
+}
+
+.dessertMenu2 {
+    animation: menuCard 1.5s ease-in 0.12s;
+    -webkit-animation: menuCard 1.5s ease-in 0.12s;
+}
+
+.dessertMenu3 {
+    animation: menuCard 1.5s ease-in 0.14s;
+    -webkit-animation: menuCard 1.5s ease-in 0.14s;
+}
+
 
 
 @keyframes menuCard {
@@ -146,10 +178,35 @@
     }
 }
 
+.opacityAnim1 {
+    animation: opacityCard 0s;
+    -webkit-animation: opacityCard 0s;
+}
 
-  /*RESPONSIVE_DESKTOP*/
+.opacityAnim2 {
+    animation: opacityCard 4s;
+    -webkit-animation: opacityCard 4s;
+}
 
-  @media screen and (min-width: 992px){
+.opacityAnim3 {
+    animation: opacityCard 6s;
+    -webkit-animation: opacityCard 6s;
+}
+
+@keyframes opacityCard {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*RESPONSIVE_DESKTOP*/
+
+@media screen and (min-width: 992px) {
     .cardMenu {
         display: flex;
         flex-direction: row;
@@ -162,4 +219,4 @@
         margin-right: 4%;
     }
 
-  }
+}

@@ -15,12 +15,14 @@
     color: black;
     position: relative;
 
+    a,
     a:visited {
         color: black;
     }
 
     .newCardRestaurant {
         @include flex;
+        @include shadow;
         position: absolute;
         top: 15px;
         right: 15px;
@@ -29,8 +31,6 @@
         font-weight: 600;
         width: 90px;
         height: 35px;
-        @include shadow;
-        box-shadow: darken($color:$shadow, $amount:20);
         border-radius: 4px;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;

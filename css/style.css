@@ -171,6 +171,7 @@ button:hover {
   color: black;
   position: relative;
 }
+.cardRestaurant a,
 .cardRestaurant a:visited {
   color: black;
 }
@@ -178,6 +179,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 5px 15px #c7c7c7;
   position: absolute;
   top: 15px;
   right: 15px;
@@ -186,8 +188,6 @@ button:hover {
   font-weight: 600;
   width: 90px;
   height: 35px;
-  box-shadow: 5px 5px 15px #c7c7c7;
-  box-shadow: #8f8e8e;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
